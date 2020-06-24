@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>First</title>
-    <url>/2020/06/21/First/</url>
-    <content><![CDATA[<p>Well today is 21th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
+    <url>/2020/06/20/First/</url>
+    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
 ]]></content>
   </entry>
   <entry>
@@ -39,6 +39,12 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Fourth day</title>
+    <url>/2020/06/24/Fourth/</url>
+    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
 ]]></content>
   </entry>
 </search>
