@@ -1,51 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>First</title>
-    <url>/2020/06/20/First/</url>
-    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Third day</title>
-    <url>/2020/06/23/Third-day/</url>
-    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Start the holiday?</title>
-    <url>/2020/07/04/Start-the-holiday/</url>
-    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>DayX</title>
-    <url>/2020/07/06/DayX/</url>
-    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he/she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Long time later</title>
-    <url>/2020/07/21/Long%20time%20later/</url>
-    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/" target="_blank" rel="noopener">another webapp</a> still under development. I might not update this blog for a whilee….</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hummm</title>
-    <url>/2020/07/28/humm/</url>
-    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
-]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>DayX</title>
+      <link href="/2022/07/23/Day%200/"/>
+      <url>/2022/07/23/Day%200/</url>
+      
+        <content type="html"><![CDATA[<p>Time to pick it up my old blog : )</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hummm</title>
+      <link href="/2020/07/28/humm/"/>
+      <url>/2020/07/28/humm/</url>
+      
+        <content type="html"><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Long time later</title>
+      <link href="/2020/07/21/Long%20time%20later/"/>
+      <url>/2020/07/21/Long%20time%20later/</url>
+      
+        <content type="html"><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DayX</title>
+      <link href="/2020/07/06/DayX/"/>
+      <url>/2020/07/06/DayX/</url>
+      
+        <content type="html"><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Start the holiday?</title>
+      <link href="/2020/07/04/Start-the-holiday/"/>
+      <url>/2020/07/04/Start-the-holiday/</url>
+      
+        <content type="html"><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Fourth day</title>
+      <link href="/2020/06/24/Fourth/"/>
+      <url>/2020/06/24/Fourth/</url>
+      
+        <content type="html"><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Third day</title>
+      <link href="/2020/06/23/Third-day/"/>
+      <url>/2020/06/23/Third-day/</url>
+      
+        <content type="html"><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Second post</title>
+      <link href="/2020/06/22/Second-post/"/>
+      <url>/2020/06/22/Second-post/</url>
+      
+        <content type="html"><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2020/06/20/First/"/>
+      <url>/2020/06/20/First/</url>
+      
+        <content type="html"><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
