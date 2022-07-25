@@ -13,15 +13,27 @@
 ]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/2020/06/20/First/</url>
+    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Interface Oriented Programming</title>
+    <url>/2022/07/25/Interface-Oriented-Programming/</url>
+    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
+]]></content>
+  </entry>
+  <entry>
     <title>Fourth day</title>
     <url>/2020/06/24/Fourth/</url>
     <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
 ]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2020/06/20/First/</url>
-    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
+    <title>Second post</title>
+    <url>/2020/06/22/Second-post/</url>
+    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
 ]]></content>
   </entry>
   <entry>
@@ -37,18 +49,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>WDCCxSESA Hackathon 2022!</title>
-    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
-    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
-<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Third day</title>
     <url>/2020/06/23/Third-day/</url>
     <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
@@ -59,5 +59,11 @@
     <url>/2020/07/28/humm/</url>
     <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>WDCCxSESA Hackathon 2022!</title>
+    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
+    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
+<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
   </entry>
 </search>
