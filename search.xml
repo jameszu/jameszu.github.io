@@ -7,15 +7,23 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Daily readings - Day 1</title>
+    <url>/2022/07/30/Daily-reading-of-hackernews-Day-1/</url>
+    <content><![CDATA[<p><a href="https://matt-rickard.com/the-programmable-web/">https://matt-rickard.com/the-programmable-web/</a></p>
+<p>This article introduced two things of the programmable web - bookmarklet (web small programs that change the browser) and user scripts (scripts that provide extra functionality of the particular website)</p>
+<p>In the end the article raise the secutiry vs the userscripts and let the readers thing why not having both the security and the userscipts. </p>
+]]></content>
+      <categories>
+        <category>Talking skill</category>
+      </categories>
+      <tags>
+        <tag>Hackernews</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DayX</title>
     <url>/2020/07/06/DayX/</url>
     <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
 ]]></content>
   </entry>
   <entry>
@@ -25,19 +33,24 @@
 ]]></content>
   </entry>
   <entry>
-    <title>How to connect to your Home PC from anywhere</title>
-    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
-    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
-<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
-<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
+    <title>Fourth day</title>
+    <url>/2020/06/24/Fourth/</url>
+    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Daily readings - Day 2</title>
+    <url>/2022/07/31/Daily-readings-Day-2/</url>
+    <content><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p>
+<p>Very interesting talk on the tech hacks</p>
+<p>The talk introduced 10 small but useful tech tips that even I had never heard of xD</p>
+<p>I knew that u can scroll down with the space bar but u can also scroll up with shift + space wow !!!</p>
+]]></content>
       <categories>
-        <category>Computer Hacks</category>
+        <category>Talking skill</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
-        <tag>Remote Connection</tag>
-        <tag>ssh</tag>
-        <tag>server</tag>
+        <tag>Ted Talks</tag>
       </tags>
   </entry>
   <entry>
@@ -67,10 +80,20 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Long time later</title>
-    <url>/2020/07/21/Long%20time%20later/</url>
-    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
-]]></content>
+    <title>How to connect to your Home PC from anywhere</title>
+    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
+    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
+<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
+<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
+      <categories>
+        <category>Computer Hacks</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Remote Connection</tag>
+        <tag>ssh</tag>
+        <tag>server</tag>
+      </tags>
   </entry>
   <entry>
     <title>Interface Oriented Programming</title>
@@ -84,6 +107,18 @@
         <tag>Programming</tag>
         <tag>Java</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Long time later</title>
+    <url>/2020/07/21/Long%20time%20later/</url>
+    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Second post</title>
+    <url>/2020/06/22/Second-post/</url>
+    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+]]></content>
   </entry>
   <entry>
     <title>Practice my talking skill - Day 1</title>
@@ -109,12 +144,6 @@
         <tag>Behavioural interview questions and answers</tag>
         <tag>Talking techniques</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
   </entry>
   <entry>
     <title>Start the holiday?</title>
