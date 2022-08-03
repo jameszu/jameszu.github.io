@@ -32,12 +32,6 @@
       </tags>
   </entry>
   <entry>
-    <title>DayX</title>
-    <url>/2022/07/23/Day%200/</url>
-    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Daily readings - Day 1</title>
     <url>/2022/07/30/Daily-reading-of-hackernews-Day-1/</url>
     <content><![CDATA[<p><a href="https://matt-rickard.com/the-programmable-web/">https://matt-rickard.com/the-programmable-web/</a></p>
@@ -52,15 +46,15 @@
       </tags>
   </entry>
   <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
+    <title>DayX</title>
+    <url>/2020/07/06/DayX/</url>
+    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
 ]]></content>
   </entry>
   <entry>
     <title>DayX</title>
-    <url>/2020/07/06/DayX/</url>
-    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
+    <url>/2022/07/23/Day%200/</url>
+    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
 ]]></content>
   </entry>
   <entry>
@@ -84,6 +78,12 @@
         <tag>ssh</tag>
         <tag>server</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Fourth day</title>
+    <url>/2020/06/24/Fourth/</url>
+    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
+]]></content>
   </entry>
   <entry>
     <title>Interface Oriented Programming</title>
@@ -131,6 +131,12 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Second post</title>
+    <url>/2020/06/22/Second-post/</url>
+    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Practice my talking skill - Day 1</title>
     <url>/2022/07/30/Practice-my-talking-skill-Day-1/</url>
     <content><![CDATA[<ol>
@@ -156,21 +162,44 @@
       </tags>
   </entry>
   <entry>
+    <title>MoSCoW Method</title>
+    <url>/2022/08/03/MoSCoW-Method/</url>
+    <content><![CDATA[<p>Features:<br>Must-Have: (The project would fail if the following features&#x2F;functionalities is not met)<br>Answering format:</p>
+<ul>
+<li>What is this feature&#x2F;functionality?</li>
+<li>Where would this feature be on the webportal? (E.g. the searching for jobs would be a new page on the web portal)</li>
+<li>The ideal steps for a user to use this feature&#x2F;functionality (e.g. Step 1 The user clicks on the top search for job bar. Step 2 The user enters the input. Step 3 The user sees a list of jobs with titles, location… on their browser, Step 4 The user click on one of the jobs and get redirected to a new page on another tab</li>
+<li>Briefly explain the connections between this and other features (if any)</li>
+</ul>
+<p>Note: The above format would help us the best to understand more precisely thoughts about a feature in your mind. You do not have to follow the entire format if you really cannot think of any, but it would be good to do so. : )</p>
+<p>Should Have: (The project would not fail if the following features&#x2F;functionalities are not met, but the project would be tougher to gain attractions)</p>
+<p>Could Have: (The project is completely fine without the following features&#x2F;functionalities. These are just some neat, interesting stuff but do not necessarily serve a greater purpose. This might be hard to distinguish from the should haves. My suggestions would be to consider how these features impact the value of our project to the users&#x2F;customers)</p>
+<p>Won’t Have: (The features that would likely be in the project, but for some reason, we can’t. Either time or resources do not allow us to implement these. We would like to keep those ideas and possibly move those to the categories above in the future: )</p>
+]]></content>
+      <categories>
+        <category>Learn everyday</category>
+      </categories>
+      <tags>
+        <tag>Project initiation</tag>
+        <tag>Stakeholder requirements</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Start the holiday?</title>
     <url>/2020/07/04/Start-the-holiday/</url>
     <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
 ]]></content>
   </entry>
   <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Third day</title>
     <url>/2020/06/23/Third-day/</url>
     <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hummm</title>
+    <url>/2020/07/28/humm/</url>
+    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
 ]]></content>
   </entry>
   <entry>
@@ -198,11 +227,5 @@ The End ~]]></content>
     <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
     <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
 <h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Hummm</title>
-    <url>/2020/07/28/humm/</url>
-    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
-]]></content>
   </entry>
 </search>
