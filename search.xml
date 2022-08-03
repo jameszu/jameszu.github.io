@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Daily Readings - Day 3 (Toastmaster!)</title>
+    <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
+    <content><![CDATA[<p>Yay tosatmasters!!!!</p>
+<p>It is scary to talk in front of people, or even just stand up and talk without people. </p>
+<p>It is also quite scary that you cannot say what you are thinking in a structured way.</p>
+<p>ANND here we comes for toastmasters biztalk. You get a chance to challenge yourself by speaking in front of people with a topic and get evaluated. </p>
+<p>It can be scary in your first time, but when you try it once, you can never stop. It is fun to talk and share ideas, and more importantly, you gets to know where you did good and bad. You are improving </p>
+]]></content>
+      <categories>
+        <category>Talking skill</category>
+      </categories>
+      <tags>
+        <tag>Toastmasters</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Daily readings - Day 2</title>
+    <url>/2022/07/31/Daily-readings-Day-2/</url>
+    <content><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p>
+<p>Very interesting talk on the tech hacks</p>
+<p>The talk introduced 10 small but useful tech tips that even I had never heard of xD</p>
+<p>I knew that u can scroll down with the space bar but u can also scroll up with shift + space wow !!!</p>
+]]></content>
+      <categories>
+        <category>Talking skill</category>
+      </categories>
+      <tags>
+        <tag>Ted Talks</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DayX</title>
     <url>/2022/07/23/Day%200/</url>
     <content><![CDATA[<p>Time to pick it up my old blog : )</p>
@@ -21,6 +52,12 @@
       </tags>
   </entry>
   <entry>
+    <title>Fourth day</title>
+    <url>/2020/06/24/Fourth/</url>
+    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
+]]></content>
+  </entry>
+  <entry>
     <title>DayX</title>
     <url>/2020/07/06/DayX/</url>
     <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
@@ -30,53 +67,6 @@
     <title></title>
     <url>/2020/06/20/First/</url>
     <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Daily readings - Day 2</title>
-    <url>/2022/07/31/Daily-readings-Day-2/</url>
-    <content><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p>
-<p>Very interesting talk on the tech hacks</p>
-<p>The talk introduced 10 small but useful tech tips that even I had never heard of xD</p>
-<p>I knew that u can scroll down with the space bar but u can also scroll up with shift + space wow !!!</p>
-]]></content>
-      <categories>
-        <category>Talking skill</category>
-      </categories>
-      <tags>
-        <tag>Ted Talks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ihaka LEcture 2022 I</title>
-    <url>/2022/07/28/Ihaka-LEcture-2022-I/</url>
-    <content><![CDATA[<p>Domain Specific languages.<br>Things aboutinsulin</p>
-<p>R packages<br>Algricolae</p>
-<hr>
-
-<p>The grammar of experimental designs<br>Work by the lectuer</p>
-<p>About Concerte syntax and bstract syntax</p>
-<p>Concerte: external representation of a lauguage<br>Abstract: internal representation of a language</p>
-<p>Proposition:<br>Design of abstract and concrete syntax can aid both intra and inter personal communitcation</p>
-<p>E.g<br>Plant diversity effect on soil microbial function and enzymes are stronger than warming in a grassland experiement</p>
-<p>3 Hyposises</p>
-<p>More into the paper:<br>Plants diversity &amp; plts are divided into three subplots<br>Different heat treatments</p>
-<p>This is in fact a <b>Split-plot-design</b></p>
-<h4 id="Edibble-lectuered-designed-library"><a href="#Edibble-lectuered-designed-library" class="headerlink" title="Edibble - lectuered designed library"></a>Edibble - lectuered designed library</h4><ul>
-<li>Semantics of the syntactic sugar are alighed with basic terms in experiemental design </li>
-<li>Experiemntal; structure are built up step by step</li>
-<li>A numbr of downsides</li>
-</ul>
-<p>Easy and quick visulaisation:<br>degguest degustation<br>A simple function called autoplot<br>Pass in edibble plot.</p>
-<p>ggplot functions</p>
-<p>Overall an interesting lecture : )</p>
-<p>The end</p>
 ]]></content>
   </entry>
   <entry>
@@ -109,15 +99,35 @@
       </tags>
   </entry>
   <entry>
-    <title>Long time later</title>
-    <url>/2020/07/21/Long%20time%20later/</url>
-    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
+    <title>Ihaka LEcture 2022 I</title>
+    <url>/2022/07/28/Ihaka-LEcture-2022-I/</url>
+    <content><![CDATA[<p>Domain Specific languages.<br>Things aboutinsulin</p>
+<p>R packages<br>Algricolae</p>
+<hr>
+
+<p>The grammar of experimental designs<br>Work by the lectuer</p>
+<p>About Concerte syntax and bstract syntax</p>
+<p>Concerte: external representation of a lauguage<br>Abstract: internal representation of a language</p>
+<p>Proposition:<br>Design of abstract and concrete syntax can aid both intra and inter personal communitcation</p>
+<p>E.g<br>Plant diversity effect on soil microbial function and enzymes are stronger than warming in a grassland experiement</p>
+<p>3 Hyposises</p>
+<p>More into the paper:<br>Plants diversity &amp; plts are divided into three subplots<br>Different heat treatments</p>
+<p>This is in fact a <b>Split-plot-design</b></p>
+<h4 id="Edibble-lectuered-designed-library"><a href="#Edibble-lectuered-designed-library" class="headerlink" title="Edibble - lectuered designed library"></a>Edibble - lectuered designed library</h4><ul>
+<li>Semantics of the syntactic sugar are alighed with basic terms in experiemental design </li>
+<li>Experiemntal; structure are built up step by step</li>
+<li>A numbr of downsides</li>
+</ul>
+<p>Easy and quick visulaisation:<br>degguest degustation<br>A simple function called autoplot<br>Pass in edibble plot.</p>
+<p>ggplot functions</p>
+<p>Overall an interesting lecture : )</p>
+<p>The end</p>
 ]]></content>
   </entry>
   <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+    <title>Long time later</title>
+    <url>/2020/07/21/Long%20time%20later/</url>
+    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
 ]]></content>
   </entry>
   <entry>
@@ -152,16 +162,16 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Second post</title>
+    <url>/2020/06/22/Second-post/</url>
+    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Third day</title>
     <url>/2020/06/23/Third-day/</url>
     <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>WDCCxSESA Hackathon 2022!</title>
-    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
-    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
-<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
   </entry>
   <entry>
     <title>What would happen with you and your peers after 10 years?</title>
@@ -182,6 +192,12 @@ The End ~]]></content>
         <tag>Random thoughts</tag>
         <tag>Insights</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>WDCCxSESA Hackathon 2022!</title>
+    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
+    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
+<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
   </entry>
   <entry>
     <title>Hummm</title>
