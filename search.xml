@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Daily Reading - Day 4 Toastmasters Again!</title>
+    <url>/2022/08/08/Daily-Reading-Day-4-Toastmasters-Again/</url>
+    <content><![CDATA[<p>Ok toastmasters</p>
+<p>This week toastmaster is a demo night. So more people coming and we got better food (2m long pizzas!)</p>
+<p>Today I got a chance to talk about what things that I can teach to the audience. I did what I think worse than last week because I started talking about coding and end up with something different. </p>
+<p>I need to structure my entire idea of the talk before I start it.</p>
+<p>Meanwhile, we had a guy who stand there and remain slient for a while… He had to take a seat and process until he is ready. And… he made it!!!!</p>
+]]></content>
+      <categories>
+        <category>Talking skill</category>
+      </categories>
+      <tags>
+        <tag>Toastmasters</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Daily readings - Day 1</title>
+    <url>/2022/07/30/Daily-reading-of-hackernews-Day-1/</url>
+    <content><![CDATA[<p><a href="https://matt-rickard.com/the-programmable-web/">https://matt-rickard.com/the-programmable-web/</a></p>
+<p>This article introduced two things of the programmable web - bookmarklet (web small programs that change the browser) and user scripts (scripts that provide extra functionality of the particular website)</p>
+<p>In the end the article raise the secutiry vs the userscripts and let the readers thing why not having both the security and the userscipts. </p>
+]]></content>
+      <categories>
+        <category>Talking skill</category>
+      </categories>
+      <tags>
+        <tag>Hackernews</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Daily Readings - Day 3 (Toastmaster!)</title>
     <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
     <content><![CDATA[<p>Yay tosatmasters!!!!</p>
@@ -32,20 +62,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Daily readings - Day 1</title>
-    <url>/2022/07/30/Daily-reading-of-hackernews-Day-1/</url>
-    <content><![CDATA[<p><a href="https://matt-rickard.com/the-programmable-web/">https://matt-rickard.com/the-programmable-web/</a></p>
-<p>This article introduced two things of the programmable web - bookmarklet (web small programs that change the browser) and user scripts (scripts that provide extra functionality of the particular website)</p>
-<p>In the end the article raise the secutiry vs the userscripts and let the readers thing why not having both the security and the userscipts. </p>
-]]></content>
-      <categories>
-        <category>Talking skill</category>
-      </categories>
-      <tags>
-        <tag>Hackernews</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DayX</title>
     <url>/2020/07/06/DayX/</url>
     <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
@@ -64,39 +80,10 @@
 ]]></content>
   </entry>
   <entry>
-    <title>How to connect to your Home PC from anywhere</title>
-    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
-    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
-<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
-<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
-      <categories>
-        <category>Computer Hacks</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>Remote Connection</tag>
-        <tag>ssh</tag>
-        <tag>server</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Fourth day</title>
     <url>/2020/06/24/Fourth/</url>
     <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Interface Oriented Programming</title>
-    <url>/2022/07/25/Interface-Oriented-Programming/</url>
-    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
-]]></content>
-      <categories>
-        <category>Java Fundamental</category>
-      </categories>
-      <tags>
-        <tag>Programming</tag>
-        <tag>Java</tag>
-      </tags>
   </entry>
   <entry>
     <title>Ihaka LEcture 2022 I</title>
@@ -125,15 +112,73 @@
 ]]></content>
   </entry>
   <entry>
+    <title>How to connect to your Home PC from anywhere</title>
+    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
+    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
+<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
+<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
+      <categories>
+        <category>Computer Hacks</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Remote Connection</tag>
+        <tag>ssh</tag>
+        <tag>server</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Long time later</title>
     <url>/2020/07/21/Long%20time%20later/</url>
     <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
 ]]></content>
   </entry>
   <entry>
+    <title>MoSCoW Method</title>
+    <url>/2022/08/03/MoSCoW-Method/</url>
+    <content><![CDATA[<p>Features:<br>Must-Have: (The project would fail if the following features&#x2F;functionalities is not met)<br>Answering format:</p>
+<ul>
+<li>What is this feature&#x2F;functionality?</li>
+<li>Where would this feature be on the webportal? (E.g. the searching for jobs would be a new page on the web portal)</li>
+<li>The ideal steps for a user to use this feature&#x2F;functionality (e.g. Step 1 The user clicks on the top search for job bar. Step 2 The user enters the input. Step 3 The user sees a list of jobs with titles, location… on their browser, Step 4 The user click on one of the jobs and get redirected to a new page on another tab</li>
+<li>Briefly explain the connections between this and other features (if any)</li>
+</ul>
+<p>Note: The above format would help us the best to understand more precisely thoughts about a feature in your mind. You do not have to follow the entire format if you really cannot think of any, but it would be good to do so. : )</p>
+<p>Should Have: (The project would not fail if the following features&#x2F;functionalities are not met, but the project would be tougher to gain attractions)</p>
+<p>Could Have: (The project is completely fine without the following features&#x2F;functionalities. These are just some neat, interesting stuff but do not necessarily serve a greater purpose. This might be hard to distinguish from the should haves. My suggestions would be to consider how these features impact the value of our project to the users&#x2F;customers)</p>
+<p>Won’t Have: (The features that would likely be in the project, but for some reason, we can’t. Either time or resources do not allow us to implement these. We would like to keep those ideas and possibly move those to the categories above in the future: )</p>
+]]></content>
+      <categories>
+        <category>Learn everyday</category>
+      </categories>
+      <tags>
+        <tag>Project initiation</tag>
+        <tag>Stakeholder requirements</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Interface Oriented Programming</title>
+    <url>/2022/07/25/Interface-Oriented-Programming/</url>
+    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
+]]></content>
+      <categories>
+        <category>Java Fundamental</category>
+      </categories>
+      <tags>
+        <tag>Programming</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Second post</title>
     <url>/2020/06/22/Second-post/</url>
     <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Start the holiday?</title>
+    <url>/2020/07/04/Start-the-holiday/</url>
+    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
 ]]></content>
   </entry>
   <entry>
@@ -162,33 +207,18 @@
       </tags>
   </entry>
   <entry>
-    <title>MoSCoW Method</title>
-    <url>/2022/08/03/MoSCoW-Method/</url>
-    <content><![CDATA[<p>Features:<br>Must-Have: (The project would fail if the following features&#x2F;functionalities is not met)<br>Answering format:</p>
-<ul>
-<li>What is this feature&#x2F;functionality?</li>
-<li>Where would this feature be on the webportal? (E.g. the searching for jobs would be a new page on the web portal)</li>
-<li>The ideal steps for a user to use this feature&#x2F;functionality (e.g. Step 1 The user clicks on the top search for job bar. Step 2 The user enters the input. Step 3 The user sees a list of jobs with titles, location… on their browser, Step 4 The user click on one of the jobs and get redirected to a new page on another tab</li>
-<li>Briefly explain the connections between this and other features (if any)</li>
-</ul>
-<p>Note: The above format would help us the best to understand more precisely thoughts about a feature in your mind. You do not have to follow the entire format if you really cannot think of any, but it would be good to do so. : )</p>
-<p>Should Have: (The project would not fail if the following features&#x2F;functionalities are not met, but the project would be tougher to gain attractions)</p>
-<p>Could Have: (The project is completely fine without the following features&#x2F;functionalities. These are just some neat, interesting stuff but do not necessarily serve a greater purpose. This might be hard to distinguish from the should haves. My suggestions would be to consider how these features impact the value of our project to the users&#x2F;customers)</p>
-<p>Won’t Have: (The features that would likely be in the project, but for some reason, we can’t. Either time or resources do not allow us to implement these. We would like to keep those ideas and possibly move those to the categories above in the future: )</p>
-]]></content>
+    <title>WDCC project thoughts</title>
+    <url>/2022/08/05/WDCC-project-thoughts/</url>
+    <content><![CDATA[<p>Just had a first meeting with the new project executives. </p>
+<p>Good ideas come out from them</p>
+<p>Say goodbye to Mr.Jason Ko : (</p>
+<h2 id="Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it"><a href="#Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it" class="headerlink" title="Projects are there for the students who can gain the MOST knowledge from it."></a>Projects are there for the students who can gain the MOST knowledge from it.</h2><h4 id="Need-to-think-about-a-more-structured-way-for-the-project-workflow"><a href="#Need-to-think-about-a-more-structured-way-for-the-project-workflow" class="headerlink" title="Need to think about a more structured way for the project workflow."></a>Need to think about a more structured way for the project workflow.</h4>]]></content>
       <categories>
-        <category>Learn everyday</category>
+        <category>WDCC Projects</category>
       </categories>
       <tags>
-        <tag>Project initiation</tag>
-        <tag>Stakeholder requirements</tag>
+        <tag>Random thoughts</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Start the holiday?</title>
-    <url>/2020/07/04/Start-the-holiday/</url>
-    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
-]]></content>
   </entry>
   <entry>
     <title>Third day</title>
@@ -197,10 +227,10 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hummm</title>
-    <url>/2020/07/28/humm/</url>
-    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
-]]></content>
+    <title>WDCCxSESA Hackathon 2022!</title>
+    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
+    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
+<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
   </entry>
   <entry>
     <title>What would happen with you and your peers after 10 years?</title>
@@ -223,9 +253,9 @@ The End ~]]></content>
       </tags>
   </entry>
   <entry>
-    <title>WDCCxSESA Hackathon 2022!</title>
-    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
-    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
-<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
+    <title>Hummm</title>
+    <url>/2020/07/28/humm/</url>
+    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
+]]></content>
   </entry>
 </search>
