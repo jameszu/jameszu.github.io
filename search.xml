@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Daily Reading - Day 4 Toastmasters Again!</title>
-    <url>/2022/08/08/Daily-Reading-Day-4-Toastmasters-Again/</url>
-    <content><![CDATA[<p>Ok toastmasters</p>
-<p>This week toastmaster is a demo night. So more people coming and we got better food (2m long pizzas!)</p>
-<p>Today I got a chance to talk about what things that I can teach to the audience. I did what I think worse than last week because I started talking about coding and end up with something different. </p>
-<p>I need to structure my entire idea of the talk before I start it.</p>
-<p>Meanwhile, we had a guy who stand there and remain slient for a while… He had to take a seat and process until he is ready. And… he made it!!!!</p>
+    <title>Clean Architecture - 0</title>
+    <url>/2022/08/16/Clean-Architecture-0/</url>
+    <content><![CDATA[<p>Notes taken from <a href="https://www.bilibili.com/video/BV1TQ4y1T7Sh?p=8&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=60064b28be52500ccc945fd8bd7e934b">this</a> video </p>
+]]></content>
+      <categories>
+        <category>architecture</category>
+      </categories>
+      <tags>
+        <tag>CLEAN architecture</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Daily Readings - Day 3 (Toastmaster!)</title>
+    <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
+    <content><![CDATA[<p>Yay tosatmasters!!!!</p>
+<p>It is scary to talk in front of people, or even just stand up and talk without people. </p>
+<p>It is also quite scary that you cannot say what you are thinking in a structured way.</p>
+<p>ANND here we comes for toastmasters biztalk. You get a chance to challenge yourself by speaking in front of people with a topic and get evaluated. </p>
+<p>It can be scary in your first time, but when you try it once, you can never stop. It is fun to talk and share ideas, and more importantly, you gets to know where you did good and bad. You are improving </p>
 ]]></content>
       <categories>
         <category>Talking skill</category>
@@ -31,13 +43,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Daily Readings - Day 3 (Toastmaster!)</title>
-    <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
-    <content><![CDATA[<p>Yay tosatmasters!!!!</p>
-<p>It is scary to talk in front of people, or even just stand up and talk without people. </p>
-<p>It is also quite scary that you cannot say what you are thinking in a structured way.</p>
-<p>ANND here we comes for toastmasters biztalk. You get a chance to challenge yourself by speaking in front of people with a topic and get evaluated. </p>
-<p>It can be scary in your first time, but when you try it once, you can never stop. It is fun to talk and share ideas, and more importantly, you gets to know where you did good and bad. You are improving </p>
+    <title>Daily Reading - Day 4 Toastmasters Again!</title>
+    <url>/2022/08/08/Daily-Reading-Day-4-Toastmasters-Again/</url>
+    <content><![CDATA[<p>Ok toastmasters</p>
+<p>This week toastmaster is a demo night. So more people coming and we got better food (2m long pizzas!)</p>
+<p>Today I got a chance to talk about what things that I can teach to the audience. I did what I think worse than last week because I started talking about coding and end up with something different. </p>
+<p>I need to structure my entire idea of the talk before I start it.</p>
+<p>Meanwhile, we had a guy who stand there and remain slient for a while… He had to take a seat and process until he is ready. And… he made it!!!!</p>
 ]]></content>
       <categories>
         <category>Talking skill</category>
@@ -45,6 +57,18 @@
       <tags>
         <tag>Toastmasters</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>DayX</title>
+    <url>/2022/07/23/Day%200/</url>
+    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>DayX</title>
+    <url>/2020/07/06/DayX/</url>
+    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
+]]></content>
   </entry>
   <entry>
     <title>Daily readings - Day 2</title>
@@ -62,27 +86,9 @@
       </tags>
   </entry>
   <entry>
-    <title>DayX</title>
-    <url>/2020/07/06/DayX/</url>
-    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>DayX</title>
-    <url>/2022/07/23/Day%200/</url>
-    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
-]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/2020/06/20/First/</url>
     <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
 ]]></content>
   </entry>
   <entry>
@@ -128,10 +134,23 @@
       </tags>
   </entry>
   <entry>
-    <title>Long time later</title>
-    <url>/2020/07/21/Long%20time%20later/</url>
-    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
+    <title>Fourth day</title>
+    <url>/2020/06/24/Fourth/</url>
+    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Interface Oriented Programming</title>
+    <url>/2022/07/25/Interface-Oriented-Programming/</url>
+    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
+]]></content>
+      <categories>
+        <category>Java Fundamental</category>
+      </categories>
+      <tags>
+        <tag>Programming</tag>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title>MoSCoW Method</title>
@@ -157,28 +176,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Interface Oriented Programming</title>
-    <url>/2022/07/25/Interface-Oriented-Programming/</url>
-    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
-]]></content>
-      <categories>
-        <category>Java Fundamental</category>
-      </categories>
-      <tags>
-        <tag>Programming</tag>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Start the holiday?</title>
-    <url>/2020/07/04/Start-the-holiday/</url>
-    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
+    <title>Long time later</title>
+    <url>/2020/07/21/Long%20time%20later/</url>
+    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
 ]]></content>
   </entry>
   <entry>
@@ -207,6 +207,30 @@
       </tags>
   </entry>
   <entry>
+    <title>Second post</title>
+    <url>/2020/06/22/Second-post/</url>
+    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Third day</title>
+    <url>/2020/06/23/Third-day/</url>
+    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Start the holiday?</title>
+    <url>/2020/07/04/Start-the-holiday/</url>
+    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>WDCCxSESA Hackathon 2022!</title>
+    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
+    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
+<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
+  </entry>
+  <entry>
     <title>WDCC project thoughts</title>
     <url>/2022/08/05/WDCC-project-thoughts/</url>
     <content><![CDATA[<p>Just had a first meeting with the new project executives. </p>
@@ -219,18 +243,6 @@
       <tags>
         <tag>Random thoughts</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Third day</title>
-    <url>/2020/06/23/Third-day/</url>
-    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>WDCCxSESA Hackathon 2022!</title>
-    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
-    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
-<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
   </entry>
   <entry>
     <title>What would happen with you and your peers after 10 years?</title>
