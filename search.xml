@@ -75,11 +75,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Clean Architecture - 1 Domain centric architecture</title>
-    <url>/2022/08/16/Clean-Architecture-1-Domain-centric-architecture/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Clean Architecture - 0</title>
     <url>/2022/08/16/Clean-Architecture-0/</url>
     <content><![CDATA[<p>Notes taken from <a href="https://www.bilibili.com/video/BV1TQ4y1T7Sh?p=8&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=60064b28be52500ccc945fd8bd7e934b">this</a> video </p>
@@ -101,20 +96,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Daily Readings - Day 3 (Toastmaster!)</title>
-    <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
-    <content><![CDATA[<p>Yay tosatmasters!!!!</p>
-<p>It is scary to talk in front of people, or even just stand up and talk without people. </p>
-<p>It is also quite scary that you cannot say what you are thinking in a structured way.</p>
-<p>ANND here we comes for toastmasters biztalk. You get a chance to challenge yourself by speaking in front of people with a topic and get evaluated. </p>
-<p>It can be scary in your first time, but when you try it once, you can never stop. It is fun to talk and share ideas, and more importantly, you gets to know where you did good and bad. You are improving </p>
-]]></content>
-      <categories>
-        <category>Talking skill</category>
-      </categories>
-      <tags>
-        <tag>Toastmasters</tag>
-      </tags>
+    <title>Clean Architecture - 1 Domain centric architecture</title>
+    <url>/2022/08/16/Clean-Architecture-1-Domain-centric-architecture/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Daily Reading - Day 4 Toastmasters Again!</title>
@@ -147,78 +131,6 @@
       </tags>
   </entry>
   <entry>
-    <title>DayX</title>
-    <url>/2022/07/23/Day%200/</url>
-    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2020/06/20/First/</url>
-    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>DayX</title>
-    <url>/2020/07/06/DayX/</url>
-    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>How to connect to your Home PC from anywhere</title>
-    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
-    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
-<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
-<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
-      <categories>
-        <category>Computer Hacks</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>Remote Connection</tag>
-        <tag>ssh</tag>
-        <tag>server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Long time later</title>
-    <url>/2020/07/21/Long%20time%20later/</url>
-    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Learn Vim? Day 0</title>
-    <url>/2022/08/22/Learn-Vim-Day-0/</url>
-    <content><![CDATA[<h1 id="Vim-basics"><a href="#Vim-basics" class="headerlink" title="Vim basics"></a>Vim basics</h1><p>i for insert<br>hjkl for directions<br>a for go to the first position<br>shift a for go to the end of the line<br>g for go to the start of the file<br>shift g for go to the eof</p>
-<p>and there is more…</p>
-]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Interface Oriented Programming</title>
-    <url>/2022/07/25/Interface-Oriented-Programming/</url>
-    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
-]]></content>
-      <categories>
-        <category>Java Fundamental</category>
-      </categories>
-      <tags>
-        <tag>Programming</tag>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Daily readings - Day 2</title>
     <url>/2022/07/31/Daily-readings-Day-2/</url>
     <content><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p>
@@ -232,6 +144,46 @@
       <tags>
         <tag>Ted Talks</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>DayX</title>
+    <url>/2022/07/23/Day%200/</url>
+    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Daily Readings - Day 3 (Toastmaster!)</title>
+    <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
+    <content><![CDATA[<p>Yay tosatmasters!!!!</p>
+<p>It is scary to talk in front of people, or even just stand up and talk without people. </p>
+<p>It is also quite scary that you cannot say what you are thinking in a structured way.</p>
+<p>ANND here we comes for toastmasters biztalk. You get a chance to challenge yourself by speaking in front of people with a topic and get evaluated. </p>
+<p>It can be scary in your first time, but when you try it once, you can never stop. It is fun to talk and share ideas, and more importantly, you gets to know where you did good and bad. You are improving </p>
+]]></content>
+      <categories>
+        <category>Talking skill</category>
+      </categories>
+      <tags>
+        <tag>Toastmasters</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DayX</title>
+    <url>/2020/07/06/DayX/</url>
+    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2020/06/20/First/</url>
+    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Fourth day</title>
+    <url>/2020/06/24/Fourth/</url>
+    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
+]]></content>
   </entry>
   <entry>
     <title>Ihaka LEcture 2022 I</title>
@@ -257,6 +209,54 @@
 <p>ggplot functions</p>
 <p>Overall an interesting lecture : )</p>
 <p>The end</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Interface Oriented Programming</title>
+    <url>/2022/07/25/Interface-Oriented-Programming/</url>
+    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
+]]></content>
+      <categories>
+        <category>Java Fundamental</category>
+      </categories>
+      <tags>
+        <tag>Programming</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to connect to your Home PC from anywhere</title>
+    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
+    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
+<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
+<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
+      <categories>
+        <category>Computer Hacks</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Remote Connection</tag>
+        <tag>ssh</tag>
+        <tag>server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Learn Vim? Day 0</title>
+    <url>/2022/08/22/Learn-Vim-Day-0/</url>
+    <content><![CDATA[<h1 id="Vim-basics"><a href="#Vim-basics" class="headerlink" title="Vim basics"></a>Vim basics</h1><p>i for insert<br>hjkl for directions<br>a for go to the first position<br>shift a for go to the end of the line<br>g for go to the start of the file<br>shift g for go to the eof</p>
+<p>and there is more…</p>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Long time later</title>
+    <url>/2020/07/21/Long%20time%20later/</url>
+    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
 ]]></content>
   </entry>
   <entry>
@@ -289,12 +289,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Practice my talking skill - Day 1</title>
     <url>/2022/07/30/Practice-my-talking-skill-Day-1/</url>
     <content><![CDATA[<ol>
@@ -320,6 +314,12 @@
       </tags>
   </entry>
   <entry>
+    <title>Second post</title>
+    <url>/2020/06/22/Second-post/</url>
+    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Start the holiday?</title>
     <url>/2020/07/04/Start-the-holiday/</url>
     <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
@@ -330,20 +330,6 @@
     <url>/2020/06/23/Third-day/</url>
     <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>WDCC project thoughts</title>
-    <url>/2022/08/05/WDCC-project-thoughts/</url>
-    <content><![CDATA[<p>Just had a first meeting with the new project executives. </p>
-<p>Good ideas come out from them</p>
-<p>Say goodbye to Mr.Jason Ko : (</p>
-<h2 id="Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it"><a href="#Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it" class="headerlink" title="Projects are there for the students who can gain the MOST knowledge from it."></a>Projects are there for the students who can gain the MOST knowledge from it.</h2><h4 id="Need-to-think-about-a-more-structured-way-for-the-project-workflow"><a href="#Need-to-think-about-a-more-structured-way-for-the-project-workflow" class="headerlink" title="Need to think about a more structured way for the project workflow."></a>Need to think about a more structured way for the project workflow.</h4>]]></content>
-      <categories>
-        <category>WDCC Projects</category>
-      </categories>
-      <tags>
-        <tag>Random thoughts</tag>
-      </tags>
   </entry>
   <entry>
     <title>What would happen with you and your peers after 10 years?</title>
@@ -366,15 +352,29 @@ The End ~]]></content>
       </tags>
   </entry>
   <entry>
-    <title>Hummm</title>
-    <url>/2020/07/28/humm/</url>
-    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
-]]></content>
+    <title>WDCC project thoughts</title>
+    <url>/2022/08/05/WDCC-project-thoughts/</url>
+    <content><![CDATA[<p>Just had a first meeting with the new project executives. </p>
+<p>Good ideas come out from them</p>
+<p>Say goodbye to Mr.Jason Ko : (</p>
+<h2 id="Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it"><a href="#Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it" class="headerlink" title="Projects are there for the students who can gain the MOST knowledge from it."></a>Projects are there for the students who can gain the MOST knowledge from it.</h2><h4 id="Need-to-think-about-a-more-structured-way-for-the-project-workflow"><a href="#Need-to-think-about-a-more-structured-way-for-the-project-workflow" class="headerlink" title="Need to think about a more structured way for the project workflow."></a>Need to think about a more structured way for the project workflow.</h4>]]></content>
+      <categories>
+        <category>WDCC Projects</category>
+      </categories>
+      <tags>
+        <tag>Random thoughts</tag>
+      </tags>
   </entry>
   <entry>
     <title>WDCCxSESA Hackathon 2022!</title>
     <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
     <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
 <h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
+  </entry>
+  <entry>
+    <title>Hummm</title>
+    <url>/2020/07/28/humm/</url>
+    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
+]]></content>
   </entry>
 </search>
