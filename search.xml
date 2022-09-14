@@ -1,380 +1,519 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>COMPSCI 753 - Lecture Notes - Stream-Sampling</title>
-    <url>/2022/08/17/COMPSCI-753-Lecture-Notes-Stream-Sampling/</url>
-    <content><![CDATA[<h1 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h1><p>Since we cannot store alllll the stream, we store a <b>uniform sample</b> of the stream to answer queries</p>
-<h1 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h1><ul>
-<li>Choose small number to keep in memory out of large number of elements</li>
-<li>Sample single elements from the stream uniformly at random</li>
-<li>Same probability of the sample to be chosen</li>
-<li>Draw sample over the stream, not the universe</li>
-</ul>
-<h1 id="Two-sampling-problems"><a href="#Two-sampling-problems" class="headerlink" title="Two sampling problems"></a>Two sampling problems</h1><ul>
-<li>P1: Sample a <b><a href="#fixed-proportion">fixed proportion</a> </b>of elements in the stream  AND the sample size is m&#x2F;10 given the stream of m elements</li>
-<li>P2: Maintain a random sample of <a href="#fixed-size">fixed size</a> over an infinite stream &amp;&amp; The sample size is fixed. s for at any time k</li>
-</ul>
-<h2 id="Fixed-proportion"><a href="#Fixed-proportion" class="headerlink" title="Fixed proportion"></a>Fixed proportion</h2><h3 id="Scenario"><a href="#Scenario" class="headerlink" title="Scenario"></a>Scenario</h3><ul>
-<li>Search engine receives a stream of tuples (user, query, time)</li>
-<li>Question: How many users run the same query in a single day?</li>
-<li>Memory: We have space to store 1&#x2F;10 of the stream</li>
-</ul>
-<h3 id="Naive-solution"><a href="#Naive-solution" class="headerlink" title="Naive solution:"></a>Naive solution:</h3><ul>
-<li>Generate a random integer in (0…9) for each query</li>
-<li>Store the query if the integer is 0; otherwise, discard.</li>
-</ul>
-<h4 id="Problem-for-naive-solution"><a href="#Problem-for-naive-solution" class="headerlink" title="Problem for naive solution:"></a>Problem for naive solution:</h4><ul>
-<li>If each user send x queries once and d queries twice (x+2d)</li>
-<li>Question becomes what the fraction of queries by an average user are duplicated</li>
-<li>Because we need to categorizes the sample, the sample size becomes a problem</li>
-</ul>
-<p>Answer would be: d&#x2F;(x+d) (True solution)</p>
-<p>But we cannot approximately answer the question</p>
-<h5 id="How-to-come-up-with-approximate-solution"><a href="#How-to-come-up-with-approximate-solution" class="headerlink" title="How to come up with approximate solution"></a>How to come up with approximate solution</h5><ul>
-<li><p>Out of x query (singleton), we query 10% of them</p>
-<ul>
-<li>P &#x3D; x&#x2F;10</li>
-</ul>
-</li>
-<li><p>For 2d duplicate query. Case 1: Both {qi’, qi’} sampled. Case 2: First of {qi’, qi’} sampled. Case 3: Second of {qi’, qi’} sampled. </p>
-<ul>
-<li>p &#x3D; d&#x2F;100 + 9d&#x2F;100 + 9d&#x2F;100</li>
-</ul>
-</li>
-<li><p>Overall:</p>
-<ul>
-<li>(d&#x2F;100) &#x2F; (x&#x2F;10 + d&#x2F;100 + 18d&#x2F;100) &#x3D; d &#x2F; 10x+19d</li>
-</ul>
-</li>
-</ul>
-<p>Above is the approximate solution according to the sampling scheme</p>
-<h4 id="Solution-Sample-Users"><a href="#Solution-Sample-Users" class="headerlink" title="Solution: Sample Users"></a>Solution: Sample Users</h4><p>We use the hash function and hash the users (not queries) into 10 buckets uniformly<br>Then pick user ID in the first bucket. </p>
-<h4 id="Generalized-solution-Fixed-proportion"><a href="#Generalized-solution-Fixed-proportion" class="headerlink" title="Generalized solution: Fixed proportion"></a>Generalized solution: Fixed proportion</h4><ul>
-<li><p>Stream tuples with keys</p>
-<ul>
-<li>Key is some subset of each tuples components</li>
-<li>e.g. tuple is (user, serach, time) -&gt; key is user</li>
-<li>Choice of key depends on applications</li>
-</ul>
-</li>
-<li><p>Task: Get a sample of a&#x2F;b fraction of the stream (e.g. 30%)</p>
-<ul>
-<li>Hash each tuple’s key uniformly into b buckets (e.g. 10 buckets)</li>
-<li>Pick the tuple if its hash value is in the first a bucket (e.g., the first 3 buckets)</li>
-</ul>
-</li>
-</ul>
-<h2 id="Fixed-size"><a href="#Fixed-size" class="headerlink" title="Fixed size"></a>Fixed size</h2>]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Long time no see</title>
+      <link href="/2022/09/13/Long-time-no-see/"/>
+      <url>/2022/09/13/Long-time-no-see/</url>
+      
+        <content type="html"><![CDATA[<p>It has been a long time since the last update xD. TIme to pick up some learning and blogging : )</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Learn Vim? Day 0</title>
+      <link href="/2022/08/22/Learn-Vim-Day-0/"/>
+      <url>/2022/08/22/Learn-Vim-Day-0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Vim-basics"><a href="#Vim-basics" class="headerlink" title="Vim basics"></a>Vim basics</h1><p>i for insert<br>hjkl for directions<br>a for go to the first position<br>shift a for go to the end of the line<br>g for go to the start of the file<br>shift g for go to the eof</p><p>and there is more…</p>]]></content>
+      
+      
       <categories>
-        <category>Lecture Notes</category>
+          
+          <category> vim </category>
+          
       </categories>
-      <tags>
-        <tag>COMPSCI 753</tag>
-        <tag>Sampling</tag>
-        <tag>Stream</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Clean Architecture - 0</title>
-    <url>/2022/08/16/Clean-Architecture-0/</url>
-    <content><![CDATA[<p>Notes taken from <a href="https://www.bilibili.com/video/BV1TQ4y1T7Sh?p=8&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=60064b28be52500ccc945fd8bd7e934b">this</a> video </p>
-<h1 id="Good-architecture-is-important"><a href="#Good-architecture-is-important" class="headerlink" title="Good architecture is important"></a>Good architecture is important</h1><p>Start from a story:</p>
-<p>2 architects John and Jane both working on a building but in two different style.</p>
-<p>John is an expert in classic architecture building, He keeps pushing the boundary of architectural design using cutting edge technologies. He uses all of his favorite tools. His design is elegant yet state of the art. </p>
-<p>Once he finished the design, he just hand that to the crew and move on for his next masterpiece. Once the building is finished he goes to the opening ceremony and read the reward of his accomplishment. </p>
-<p>But Jane has a very different approach to the architecture. First, she start chatting with the future inhabitants in the building. I.e. the employees, the maintenance group and even the construction worker. She finds out what they need, what they found valuable, and what the experience level of the construction is. </p>
-<p>Then she designs the architecture with he inhabitants in mind. She consider their need with each decision that they were made. </p>
-<p>Once she finished the blueprint, she doesn’t just hand it to the worker. Instead she work side by side with them, help them understand the design, and improve the design, and solve the problems that are arrived. </p>
-<p>Those two approaches is going to create two different architecture.<br>So, which one would the work like? </p>
-<p>That story drives us to the CLEAN architecture. </p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> vim </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>COMPSCI 753 - Lecture Notes - Stream-Sampling</title>
+      <link href="/2022/08/17/COMPSCI-753-Lecture-Notes-Stream-Sampling/"/>
+      <url>/2022/08/17/COMPSCI-753-Lecture-Notes-Stream-Sampling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h1><p>Since we cannot store alllll the stream, we store a <b>uniform sample</b> of the stream to answer queries</p><h1 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h1><ul><li>Choose small number to keep in memory out of large number of elements</li><li>Sample single elements from the stream uniformly at random</li><li>Same probability of the sample to be chosen</li><li>Draw sample over the stream, not the universe</li></ul><h1 id="Two-sampling-problems"><a href="#Two-sampling-problems" class="headerlink" title="Two sampling problems"></a>Two sampling problems</h1><ul><li>P1: Sample a <b><a href="#fixed-proportion">fixed proportion</a> </b>of elements in the stream  AND the sample size is m&#x2F;10 given the stream of m elements</li><li>P2: Maintain a random sample of <a href="#fixed-size">fixed size</a> over an infinite stream &amp;&amp; The sample size is fixed. s for at any time k</li></ul><h2 id="Fixed-proportion"><a href="#Fixed-proportion" class="headerlink" title="Fixed proportion"></a>Fixed proportion</h2><h3 id="Scenario"><a href="#Scenario" class="headerlink" title="Scenario"></a>Scenario</h3><ul><li>Search engine receives a stream of tuples (user, query, time)</li><li>Question: How many users run the same query in a single day?</li><li>Memory: We have space to store 1&#x2F;10 of the stream</li></ul><h3 id="Naive-solution"><a href="#Naive-solution" class="headerlink" title="Naive solution:"></a>Naive solution:</h3><ul><li>Generate a random integer in (0…9) for each query</li><li>Store the query if the integer is 0; otherwise, discard.</li></ul><h4 id="Problem-for-naive-solution"><a href="#Problem-for-naive-solution" class="headerlink" title="Problem for naive solution:"></a>Problem for naive solution:</h4><ul><li>If each user send x queries once and d queries twice (x+2d)</li><li>Question becomes what the fraction of queries by an average user are duplicated</li><li>Because we need to categorizes the sample, the sample size becomes a problem</li></ul><p>Answer would be: d&#x2F;(x+d) (True solution)</p><p>But we cannot approximately answer the question</p><h5 id="How-to-come-up-with-approximate-solution"><a href="#How-to-come-up-with-approximate-solution" class="headerlink" title="How to come up with approximate solution"></a>How to come up with approximate solution</h5><ul><li><p>Out of x query (singleton), we query 10% of them</p><ul><li>P &#x3D; x&#x2F;10</li></ul></li><li><p>For 2d duplicate query. Case 1: Both {qi’, qi’} sampled. Case 2: First of {qi’, qi’} sampled. Case 3: Second of {qi’, qi’} sampled. </p><ul><li>p &#x3D; d&#x2F;100 + 9d&#x2F;100 + 9d&#x2F;100</li></ul></li><li><p>Overall:</p><ul><li>(d&#x2F;100) &#x2F; (x&#x2F;10 + d&#x2F;100 + 18d&#x2F;100) &#x3D; d &#x2F; 10x+19d</li></ul></li></ul><p>Above is the approximate solution according to the sampling scheme</p><h4 id="Solution-Sample-Users"><a href="#Solution-Sample-Users" class="headerlink" title="Solution: Sample Users"></a>Solution: Sample Users</h4><p>We use the hash function and hash the users (not queries) into 10 buckets uniformly<br>Then pick user ID in the first bucket. </p><h4 id="Generalized-solution-Fixed-proportion"><a href="#Generalized-solution-Fixed-proportion" class="headerlink" title="Generalized solution: Fixed proportion"></a>Generalized solution: Fixed proportion</h4><ul><li><p>Stream tuples with keys</p><ul><li>Key is some subset of each tuples components</li><li>e.g. tuple is (user, serach, time) -&gt; key is user</li><li>Choice of key depends on applications</li></ul></li><li><p>Task: Get a sample of a&#x2F;b fraction of the stream (e.g. 30%)</p><ul><li>Hash each tuple’s key uniformly into b buckets (e.g. 10 buckets)</li><li>Pick the tuple if its hash value is in the first a bucket (e.g., the first 3 buckets)</li></ul></li></ul><h2 id="Fixed-size"><a href="#Fixed-size" class="headerlink" title="Fixed size"></a>Fixed size</h2>]]></content>
+      
+      
       <categories>
-        <category>architecture</category>
+          
+          <category> Lecture Notes </category>
+          
       </categories>
-      <tags>
-        <tag>CLEAN architecture</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Clean Architecture - 1 Domain centric architecture</title>
-    <url>/2022/08/16/Clean-Architecture-1-Domain-centric-architecture/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Daily Reading - Day 4 Toastmasters Again!</title>
-    <url>/2022/08/08/Daily-Reading-Day-4-Toastmasters-Again/</url>
-    <content><![CDATA[<p>Ok toastmasters</p>
-<p>This week toastmaster is a demo night. So more people coming and we got better food (2m long pizzas!)</p>
-<p>Today I got a chance to talk about what things that I can teach to the audience. I did what I think worse than last week because I started talking about coding and end up with something different. </p>
-<p>I need to structure my entire idea of the talk before I start it.</p>
-<p>Meanwhile, we had a guy who stand there and remain slient for a while… He had to take a seat and process until he is ready. And… he made it!!!!</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> COMPSCI 753 </tag>
+            
+            <tag> Sampling </tag>
+            
+            <tag> Stream </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Clean Architecture - 1 Domain centric architecture</title>
+      <link href="/2022/08/16/Clean-Architecture-1-Domain-centric-architecture/"/>
+      <url>/2022/08/16/Clean-Architecture-1-Domain-centric-architecture/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Clean Architecture - 0</title>
+      <link href="/2022/08/16/Clean-Architecture-0/"/>
+      <url>/2022/08/16/Clean-Architecture-0/</url>
+      
+        <content type="html"><![CDATA[<p>Notes taken from <a href="https://www.bilibili.com/video/BV1TQ4y1T7Sh?p=8&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=60064b28be52500ccc945fd8bd7e934b">this</a> video </p><h1 id="Good-architecture-is-important"><a href="#Good-architecture-is-important" class="headerlink" title="Good architecture is important"></a>Good architecture is important</h1><p>Start from a story:</p><p>2 architects John and Jane both working on a building but in two different style.</p><p>John is an expert in classic architecture building, He keeps pushing the boundary of architectural design using cutting edge technologies. He uses all of his favorite tools. His design is elegant yet state of the art. </p><p>Once he finished the design, he just hand that to the crew and move on for his next masterpiece. Once the building is finished he goes to the opening ceremony and read the reward of his accomplishment. </p><p>But Jane has a very different approach to the architecture. First, she start chatting with the future inhabitants in the building. I.e. the employees, the maintenance group and even the construction worker. She finds out what they need, what they found valuable, and what the experience level of the construction is. </p><p>Then she designs the architecture with he inhabitants in mind. She consider their need with each decision that they were made. </p><p>Once she finished the blueprint, she doesn’t just hand it to the worker. Instead she work side by side with them, help them understand the design, and improve the design, and solve the problems that are arrived. </p><p>Those two approaches is going to create two different architecture.<br>So, which one would the work like? </p><p>That story drives us to the CLEAN architecture. </p>]]></content>
+      
+      
       <categories>
-        <category>Talking skill</category>
+          
+          <category> architecture </category>
+          
       </categories>
-      <tags>
-        <tag>Toastmasters</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Daily readings - Day 1</title>
-    <url>/2022/07/30/Daily-reading-of-hackernews-Day-1/</url>
-    <content><![CDATA[<p><a href="https://matt-rickard.com/the-programmable-web/">https://matt-rickard.com/the-programmable-web/</a></p>
-<p>This article introduced two things of the programmable web - bookmarklet (web small programs that change the browser) and user scripts (scripts that provide extra functionality of the particular website)</p>
-<p>In the end the article raise the secutiry vs the userscripts and let the readers thing why not having both the security and the userscipts. </p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> CLEAN architecture </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Daily Reading - Day 4 Toastmasters Again!</title>
+      <link href="/2022/08/08/Daily-Reading-Day-4-Toastmasters-Again/"/>
+      <url>/2022/08/08/Daily-Reading-Day-4-Toastmasters-Again/</url>
+      
+        <content type="html"><![CDATA[<p>Ok toastmasters</p><p>This week toastmaster is a demo night. So more people coming and we got better food (2m long pizzas!)</p><p>Today I got a chance to talk about what things that I can teach to the audience. I did what I think worse than last week because I started talking about coding and end up with something different. </p><p>I need to structure my entire idea of the talk before I start it.</p><p>Meanwhile, we had a guy who stand there and remain slient for a while… He had to take a seat and process until he is ready. And… he made it!!!!</p>]]></content>
+      
+      
       <categories>
-        <category>Talking skill</category>
+          
+          <category> Talking skill </category>
+          
       </categories>
-      <tags>
-        <tag>Hackernews</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Daily readings - Day 2</title>
-    <url>/2022/07/31/Daily-readings-Day-2/</url>
-    <content><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p>
-<p>Very interesting talk on the tech hacks</p>
-<p>The talk introduced 10 small but useful tech tips that even I had never heard of xD</p>
-<p>I knew that u can scroll down with the space bar but u can also scroll up with shift + space wow !!!</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Toastmasters </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WDCC project thoughts</title>
+      <link href="/2022/08/05/WDCC-project-thoughts/"/>
+      <url>/2022/08/05/WDCC-project-thoughts/</url>
+      
+        <content type="html"><![CDATA[<p>Just had a first meeting with the new project executives. </p><p>Good ideas come out from them</p><p>Say goodbye to Mr.Jason Ko : (</p><h2 id="Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it"><a href="#Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it" class="headerlink" title="Projects are there for the students who can gain the MOST knowledge from it."></a>Projects are there for the students who can gain the MOST knowledge from it.</h2><h4 id="Need-to-think-about-a-more-structured-way-for-the-project-workflow"><a href="#Need-to-think-about-a-more-structured-way-for-the-project-workflow" class="headerlink" title="Need to think about a more structured way for the project workflow."></a>Need to think about a more structured way for the project workflow.</h4>]]></content>
+      
+      
       <categories>
-        <category>Talking skill</category>
+          
+          <category> WDCC Projects </category>
+          
       </categories>
-      <tags>
-        <tag>Ted Talks</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DayX</title>
-    <url>/2022/07/23/Day%200/</url>
-    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Daily Readings - Day 3 (Toastmaster!)</title>
-    <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
-    <content><![CDATA[<p>Yay tosatmasters!!!!</p>
-<p>It is scary to talk in front of people, or even just stand up and talk without people. </p>
-<p>It is also quite scary that you cannot say what you are thinking in a structured way.</p>
-<p>ANND here we comes for toastmasters biztalk. You get a chance to challenge yourself by speaking in front of people with a topic and get evaluated. </p>
-<p>It can be scary in your first time, but when you try it once, you can never stop. It is fun to talk and share ideas, and more importantly, you gets to know where you did good and bad. You are improving </p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Random thoughts </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MoSCoW Method</title>
+      <link href="/2022/08/03/MoSCoW-Method/"/>
+      <url>/2022/08/03/MoSCoW-Method/</url>
+      
+        <content type="html"><![CDATA[<p>Features:<br>Must-Have: (The project would fail if the following features&#x2F;functionalities is not met)<br>Answering format:</p><ul><li>What is this feature&#x2F;functionality?</li><li>Where would this feature be on the webportal? (E.g. the searching for jobs would be a new page on the web portal)</li><li>The ideal steps for a user to use this feature&#x2F;functionality (e.g. Step 1 The user clicks on the top search for job bar. Step 2 The user enters the input. Step 3 The user sees a list of jobs with titles, location… on their browser, Step 4 The user click on one of the jobs and get redirected to a new page on another tab</li><li>Briefly explain the connections between this and other features (if any)</li></ul><p>Note: The above format would help us the best to understand more precisely thoughts about a feature in your mind. You do not have to follow the entire format if you really cannot think of any, but it would be good to do so. : )</p><p>Should Have: (The project would not fail if the following features&#x2F;functionalities are not met, but the project would be tougher to gain attractions)</p><p>Could Have: (The project is completely fine without the following features&#x2F;functionalities. These are just some neat, interesting stuff but do not necessarily serve a greater purpose. This might be hard to distinguish from the should haves. My suggestions would be to consider how these features impact the value of our project to the users&#x2F;customers)</p><p>Won’t Have: (The features that would likely be in the project, but for some reason, we can’t. Either time or resources do not allow us to implement these. We would like to keep those ideas and possibly move those to the categories above in the future: )</p>]]></content>
+      
+      
       <categories>
-        <category>Talking skill</category>
+          
+          <category> Learn everyday </category>
+          
       </categories>
-      <tags>
-        <tag>Toastmasters</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DayX</title>
-    <url>/2020/07/06/DayX/</url>
-    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2020/06/20/First/</url>
-    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Ihaka LEcture 2022 I</title>
-    <url>/2022/07/28/Ihaka-LEcture-2022-I/</url>
-    <content><![CDATA[<p>Domain Specific languages.<br>Things aboutinsulin</p>
-<p>R packages<br>Algricolae</p>
-<hr>
-
-<p>The grammar of experimental designs<br>Work by the lectuer</p>
-<p>About Concerte syntax and bstract syntax</p>
-<p>Concerte: external representation of a lauguage<br>Abstract: internal representation of a language</p>
-<p>Proposition:<br>Design of abstract and concrete syntax can aid both intra and inter personal communitcation</p>
-<p>E.g<br>Plant diversity effect on soil microbial function and enzymes are stronger than warming in a grassland experiement</p>
-<p>3 Hyposises</p>
-<p>More into the paper:<br>Plants diversity &amp; plts are divided into three subplots<br>Different heat treatments</p>
-<p>This is in fact a <b>Split-plot-design</b></p>
-<h4 id="Edibble-lectuered-designed-library"><a href="#Edibble-lectuered-designed-library" class="headerlink" title="Edibble - lectuered designed library"></a>Edibble - lectuered designed library</h4><ul>
-<li>Semantics of the syntactic sugar are alighed with basic terms in experiemental design </li>
-<li>Experiemntal; structure are built up step by step</li>
-<li>A numbr of downsides</li>
-</ul>
-<p>Easy and quick visulaisation:<br>degguest degustation<br>A simple function called autoplot<br>Pass in edibble plot.</p>
-<p>ggplot functions</p>
-<p>Overall an interesting lecture : )</p>
-<p>The end</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Interface Oriented Programming</title>
-    <url>/2022/07/25/Interface-Oriented-Programming/</url>
-    <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Project initiation </tag>
+            
+            <tag> Stakeholder requirements </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Daily Readings - Day 3 (Toastmaster!)</title>
+      <link href="/2022/08/01/Daily-Readings-Day-3-Toastmaster/"/>
+      <url>/2022/08/01/Daily-Readings-Day-3-Toastmaster/</url>
+      
+        <content type="html"><![CDATA[<p>Yay tosatmasters!!!!</p><p>It is scary to talk in front of people, or even just stand up and talk without people. </p><p>It is also quite scary that you cannot say what you are thinking in a structured way.</p><p>ANND here we comes for toastmasters biztalk. You get a chance to challenge yourself by speaking in front of people with a topic and get evaluated. </p><p>It can be scary in your first time, but when you try it once, you can never stop. It is fun to talk and share ideas, and more importantly, you gets to know where you did good and bad. You are improving </p>]]></content>
+      
+      
       <categories>
-        <category>Java Fundamental</category>
+          
+          <category> Talking skill </category>
+          
       </categories>
-      <tags>
-        <tag>Programming</tag>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to connect to your Home PC from anywhere</title>
-    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
-    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
-<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
-<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Toastmasters </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Daily readings - Day 2</title>
+      <link href="/2022/07/31/Daily-readings-Day-2/"/>
+      <url>/2022/07/31/Daily-readings-Day-2/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p><p>Very interesting talk on the tech hacks</p><p>The talk introduced 10 small but useful tech tips that even I had never heard of xD</p><p>I knew that u can scroll down with the space bar but u can also scroll up with shift + space wow !!!</p>]]></content>
+      
+      
       <categories>
-        <category>Computer Hacks</category>
+          
+          <category> Talking skill </category>
+          
       </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>Remote Connection</tag>
-        <tag>ssh</tag>
-        <tag>server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Learn Vim? Day 0</title>
-    <url>/2022/08/22/Learn-Vim-Day-0/</url>
-    <content><![CDATA[<h1 id="Vim-basics"><a href="#Vim-basics" class="headerlink" title="Vim basics"></a>Vim basics</h1><p>i for insert<br>hjkl for directions<br>a for go to the first position<br>shift a for go to the end of the line<br>g for go to the start of the file<br>shift g for go to the eof</p>
-<p>and there is more…</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Ted Talks </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Daily readings - Day 1</title>
+      <link href="/2022/07/30/Daily-reading-of-hackernews-Day-1/"/>
+      <url>/2022/07/30/Daily-reading-of-hackernews-Day-1/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://matt-rickard.com/the-programmable-web/">https://matt-rickard.com/the-programmable-web/</a></p><p>This article introduced two things of the programmable web - bookmarklet (web small programs that change the browser) and user scripts (scripts that provide extra functionality of the particular website)</p><p>In the end the article raise the secutiry vs the userscripts and let the readers thing why not having both the security and the userscipts. </p>]]></content>
+      
+      
       <categories>
-        <category>vim</category>
+          
+          <category> Talking skill </category>
+          
       </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Long time later</title>
-    <url>/2020/07/21/Long%20time%20later/</url>
-    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Long time no see</title>
-    <url>/2022/09/13/Long-time-no-see/</url>
-    <content><![CDATA[<p>It has been a long time since the last update xD. TIme to pick up some learning and blogging : )</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>MoSCoW Method</title>
-    <url>/2022/08/03/MoSCoW-Method/</url>
-    <content><![CDATA[<p>Features:<br>Must-Have: (The project would fail if the following features&#x2F;functionalities is not met)<br>Answering format:</p>
-<ul>
-<li>What is this feature&#x2F;functionality?</li>
-<li>Where would this feature be on the webportal? (E.g. the searching for jobs would be a new page on the web portal)</li>
-<li>The ideal steps for a user to use this feature&#x2F;functionality (e.g. Step 1 The user clicks on the top search for job bar. Step 2 The user enters the input. Step 3 The user sees a list of jobs with titles, location… on their browser, Step 4 The user click on one of the jobs and get redirected to a new page on another tab</li>
-<li>Briefly explain the connections between this and other features (if any)</li>
-</ul>
-<p>Note: The above format would help us the best to understand more precisely thoughts about a feature in your mind. You do not have to follow the entire format if you really cannot think of any, but it would be good to do so. : )</p>
-<p>Should Have: (The project would not fail if the following features&#x2F;functionalities are not met, but the project would be tougher to gain attractions)</p>
-<p>Could Have: (The project is completely fine without the following features&#x2F;functionalities. These are just some neat, interesting stuff but do not necessarily serve a greater purpose. This might be hard to distinguish from the should haves. My suggestions would be to consider how these features impact the value of our project to the users&#x2F;customers)</p>
-<p>Won’t Have: (The features that would likely be in the project, but for some reason, we can’t. Either time or resources do not allow us to implement these. We would like to keep those ideas and possibly move those to the categories above in the future: )</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Hackernews </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Practice my talking skill - Day 1</title>
+      <link href="/2022/07/30/Practice-my-talking-skill-Day-1/"/>
+      <url>/2022/07/30/Practice-my-talking-skill-Day-1/</url>
+      
+        <content type="html"><![CDATA[<ol><li>Listen 2. Speak 3. Read 4. Observe and interpret body language.<br>From Interview warmup by google:</li></ol><p>Can you please tell me a bit about yourself?<br>Yep, so, my name is James. I’m on 40 concert student at the University of Auckland. So I’m studying in my final year. So I’m doing some honest project as well as a lot of extra curriculum stuff such as my club and product directed overseeing all the 7th or junk. We haven’t right now, and I’m to do more self report back to the students in the future, and I’m looking for currently looking for some practise and talking to other people for now and thanks for listening.</p><p>What are you looking for in your next job?<br>So I’m currently looking for a junior developer. Also, it would be mostly some sulphur department as awesome or product management the colour of every year so it’ll be mainly on the full stack development roll and my my idea is to probably stop on the back and look at those data logic and then go into the fountain Park which let me learn more on the US fart and still be making a more complete software developer. And after that I’ll be probably more looking into some management which will be much better to me to practise my leadership role which out other thing of a nice one and I’ll be all my answer for this question looking for entry-level sober driver Road.</p><p>How would you describe your working style?<br>So my watch install is pretty Elsa flexible so I can adapt to almost all the solution if if for example at the start at the assessor projector for me to Russian, I’ll be a problem or into the canova midnight night all that kind of stuff. So smart as possible because that’s why we were burning but if there’s just a normal Coburg and we have some plans for the project. They’ll probably most likely to stick to this product product lines and meanwhile improve the plans for so I will look into the past to see what kind of things I didn’t go on the working style and improve the future or working style and I’ll be probably more into People working style talking with people as well as working on my individual and yeah, I’ll be my answer.</p><p>Please tell me about some of your strengths and weaknesses.<br>So my biggest strengths will be a person so or whatever is on the work or whatever whatever codes that happens. I would not change my dear. I will most likely try to communicate with others to solve the problem rather than to stick on this kind of problems for ages and at the end it was not working in terms of weaknesses. I’ll be definitely on the imagine park. So for me or I’m a student right now, but for some reason I have to go to Matt responsibilities because I wanna do more and Improvement. I mean call myself, right? So I’m currently having our apartment job as a support on student. I having a club executive I having another Another lid off another club and also another club executive or all those 5 attack was fine. But the time goes I found out it just little bit hard with manage because all the other things including my family is my life my social life and are talking with fries. It just a little bit hard to balance all those 5 things to fit into my life. So I was trying to think of a way to money to stuff on your bed as well as trying to simplify the whole process rather die having this and destroy their have another Road over there. So they’ll be my biggest weakness.</p><p>Tell me about a time you made a mistake. How did you communicate that mistake?<br>Yeah, I’m so the mistake. I’ll say mistake Ruby that can I like friendly Lionel so sometimes if so, I’ll give you example of a project and another per actual life is relaxation. So I was talking with my parents or my girlfriend. Sometimes I try to hide something because that’s my point of view. That’s probably know something that they should know or at least know at the moment. So ill probably use some other languages use other Wars 2. Hi this truth, but the thing is later on if this find out that’s going to be even worse than just telling the truth. So what I thought process on how I communicate about a mistake, it’s just talk with them like to truthfully Don’t try to hide anything because if you hide something and lie something you had to lie other things or to the things your Line Rider just gonna start here but psycho and that’s not not not really good psycho to have in your life and that’s gonna affect your works now and they seem going to affect yourself or just the worst case you would have so for me personally. I made a lot of those. Can I mistake by Candlelight of your voice singing I got this and this but it’s not the only thing is I can do it now as trying to finish up everything rather than try to keep hiding. So just tell them all. Sorry. I didn’t do those stuff and from now on his my plan actually action rather than just tell me stuff.</p><h4 id="Take-2"><a href="#Take-2" class="headerlink" title="Take 2"></a>Take 2</h4><p>What are you looking for in your next job?<br>Ok. So what are we looking for for my next job? Will my.com experience is literally just student who got internship before and has some react-native skills. So for my next door and next job at different looking into more on the on the front inside as well as so full stack, but full stack developer. Oh, so we’re more likely to be a junior software developer roll who work on at the existing project or or or new project in this your company and my real go is to differently improve my coding skills from all those coding standards and all the Skoda NZ stuff. How old are different kinds of code that heiko on this specific product out walking in my next job, and I found is really important for me to talk with those different people and had to learn as much as possible from the sinner developers and as well as for my peers or if there’s a bomb appears as source my teammates, so what I’m really looking for is the poster technical experience as well as the non technical experience for my next door, and I’ll be my answer. Thanks for listening.</p><p>Can you please tell me a bit about yourself?<br>Hello, so I’m a fourth year computer science student at the University of Auckland studying Bachelor of the one science and that’s in my final year. So right now I’m working on my own Oscar drag or which is about expressive chat bold and Wilder go some department and other than my universe also Club executive the project director at a white granica Sailing Club Millie in charge of or all of our 8 soccer projects that about delivering to all of our students and as was talking with the some potential clients that could possibly former product in the future. And other than that, I’m also kayaking are all the software development, especially the phone because I find it really really interests me on those visualisations and all the animation Park. Silent love love to learn as much as possible on the Skoda inside as well as see how other people actually I learn see how other people actually communicate with each other and try to adapt or chatted learn as much as possible from them. So they’ll be my answer. Thanks for listening.</p><p>Tell me about a time when you had to develop a new skill. How did you approach the learning process?<br>So I will give you experience of my internship at the group. So at work their ass at digital engineer intern and the project is mainly about the building services. So where you saw a softer than ever used before call called Orthodox ribbit and my lowest to developer extension on the river software. So I have zero experience with that software. I have some experience with hole to develop that software. So my initial approach is to definitely see if there’s any people that can help me in the team or in the company because that’s a lot company and there’s a lot of really talented people and luckily I found the person who sells senior bim engineer that is working on those kinds of extensions. So I keep asking him about how to act Start extension. How’s work? I’m glad and later on. I cannot pick up things on my own and I can actually provider a Prado complete code to develop the river at on which I found really interesting because solo algorithm inside Embassy shop tonight, which I never used before in the station and I’ll be my prosci. So first of all, the people who know that and try to improve myself under as much as possible them. I’m wondering what happened there for the snowman that can help the this always Google that I can help me on the candle burner process.</p><p>Describe a situation when you disagreed with someone at work. What did you do, and what was the result?<br>Ok, so I’ll be Carol from the previous answer. So it’s for my Rivet. I don’t that I was working in on my internship internship. So also time when or trying to achieve some of the functionalities and there’s two ways to do a one is a virus in Hobart that I’ll say around 50 to 60% of the job and other than I could be manually down and there’s another another approach that about that. I’ll get them that it’s hard but it’s 80% of the work so and a time I was disgusting discussing that was like my buddy just to figure out which way that feed us the most and initial experience with a river. Mr. Simple algorithm that I could do in wake that could finish some time in a 60% of work. So that’s really great and investigate much time into the difficult algorithm because all the things are the functionality to achieve so that was the situation and discussion was to try to figure out if that’s actually feasible how much time it will cost to implement the later on after discussion at then just try to implemented. I see how hard it is and the result is really hard. Yes quite hard. So we kind of go into the middle way which is so 4:30 drop them, but still be the simple over them so we decided to keep</p><p>Please share a time when you set a goal for yourself and achieved it. How did you go about that?<br>Well, that’s a lot of time start. I said I go for myself, but I didn’t achieve that or 1 things to write a Blog so I had this blog that started out around 3 weeks ago. I’m still keep right to keep riding on a daily basis and that includes almost everything that happened or that is supporting the happened on the day and I try to have taken a reflection on my blog which I find it really useful to look back into. So one thing I was I was trying to achieve us a call is too deadly set up the block write a hey then I tried to see how hard it is to ride it from scratch. It is very hard. So I didn’t go to another approach which is all like a Blog generator.org.au so-called jamstack jamstack my size. Are you sore edging call axle with generous static bag size for me so I can just read markdown and there were generated image came out so I can drop a little bit up our pages and I just did that and try to some of the things which has finally interesting and and it just to keep updating stuff on the block. So that’s all my goes to the blog and I shifted which I will most likely keep going keep recording myself in the dog if your interest check out this but sad and I’ll be my answer.</p>]]></content>
+      
+      
       <categories>
-        <category>Learn everyday</category>
+          
+          <category> Talking skill </category>
+          
       </categories>
-      <tags>
-        <tag>Project initiation</tag>
-        <tag>Stakeholder requirements</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Practice my talking skill - Day 1</title>
-    <url>/2022/07/30/Practice-my-talking-skill-Day-1/</url>
-    <content><![CDATA[<ol>
-<li>Listen 2. Speak 3. Read 4. Observe and interpret body language.<br>From Interview warmup by google:</li>
-</ol>
-<p>Can you please tell me a bit about yourself?<br>Yep, so, my name is James. I’m on 40 concert student at the University of Auckland. So I’m studying in my final year. So I’m doing some honest project as well as a lot of extra curriculum stuff such as my club and product directed overseeing all the 7th or junk. We haven’t right now, and I’m to do more self report back to the students in the future, and I’m looking for currently looking for some practise and talking to other people for now and thanks for listening.</p>
-<p>What are you looking for in your next job?<br>So I’m currently looking for a junior developer. Also, it would be mostly some sulphur department as awesome or product management the colour of every year so it’ll be mainly on the full stack development roll and my my idea is to probably stop on the back and look at those data logic and then go into the fountain Park which let me learn more on the US fart and still be making a more complete software developer. And after that I’ll be probably more looking into some management which will be much better to me to practise my leadership role which out other thing of a nice one and I’ll be all my answer for this question looking for entry-level sober driver Road.</p>
-<p>How would you describe your working style?<br>So my watch install is pretty Elsa flexible so I can adapt to almost all the solution if if for example at the start at the assessor projector for me to Russian, I’ll be a problem or into the canova midnight night all that kind of stuff. So smart as possible because that’s why we were burning but if there’s just a normal Coburg and we have some plans for the project. They’ll probably most likely to stick to this product product lines and meanwhile improve the plans for so I will look into the past to see what kind of things I didn’t go on the working style and improve the future or working style and I’ll be probably more into People working style talking with people as well as working on my individual and yeah, I’ll be my answer.</p>
-<p>Please tell me about some of your strengths and weaknesses.<br>So my biggest strengths will be a person so or whatever is on the work or whatever whatever codes that happens. I would not change my dear. I will most likely try to communicate with others to solve the problem rather than to stick on this kind of problems for ages and at the end it was not working in terms of weaknesses. I’ll be definitely on the imagine park. So for me or I’m a student right now, but for some reason I have to go to Matt responsibilities because I wanna do more and Improvement. I mean call myself, right? So I’m currently having our apartment job as a support on student. I having a club executive I having another Another lid off another club and also another club executive or all those 5 attack was fine. But the time goes I found out it just little bit hard with manage because all the other things including my family is my life my social life and are talking with fries. It just a little bit hard to balance all those 5 things to fit into my life. So I was trying to think of a way to money to stuff on your bed as well as trying to simplify the whole process rather die having this and destroy their have another Road over there. So they’ll be my biggest weakness.</p>
-<p>Tell me about a time you made a mistake. How did you communicate that mistake?<br>Yeah, I’m so the mistake. I’ll say mistake Ruby that can I like friendly Lionel so sometimes if so, I’ll give you example of a project and another per actual life is relaxation. So I was talking with my parents or my girlfriend. Sometimes I try to hide something because that’s my point of view. That’s probably know something that they should know or at least know at the moment. So ill probably use some other languages use other Wars 2. Hi this truth, but the thing is later on if this find out that’s going to be even worse than just telling the truth. So what I thought process on how I communicate about a mistake, it’s just talk with them like to truthfully Don’t try to hide anything because if you hide something and lie something you had to lie other things or to the things your Line Rider just gonna start here but psycho and that’s not not not really good psycho to have in your life and that’s gonna affect your works now and they seem going to affect yourself or just the worst case you would have so for me personally. I made a lot of those. Can I mistake by Candlelight of your voice singing I got this and this but it’s not the only thing is I can do it now as trying to finish up everything rather than try to keep hiding. So just tell them all. Sorry. I didn’t do those stuff and from now on his my plan actually action rather than just tell me stuff.</p>
-<h4 id="Take-2"><a href="#Take-2" class="headerlink" title="Take 2"></a>Take 2</h4><p>What are you looking for in your next job?<br>Ok. So what are we looking for for my next job? Will my.com experience is literally just student who got internship before and has some react-native skills. So for my next door and next job at different looking into more on the on the front inside as well as so full stack, but full stack developer. Oh, so we’re more likely to be a junior software developer roll who work on at the existing project or or or new project in this your company and my real go is to differently improve my coding skills from all those coding standards and all the Skoda NZ stuff. How old are different kinds of code that heiko on this specific product out walking in my next job, and I found is really important for me to talk with those different people and had to learn as much as possible from the sinner developers and as well as for my peers or if there’s a bomb appears as source my teammates, so what I’m really looking for is the poster technical experience as well as the non technical experience for my next door, and I’ll be my answer. Thanks for listening.</p>
-<p>Can you please tell me a bit about yourself?<br>Hello, so I’m a fourth year computer science student at the University of Auckland studying Bachelor of the one science and that’s in my final year. So right now I’m working on my own Oscar drag or which is about expressive chat bold and Wilder go some department and other than my universe also Club executive the project director at a white granica Sailing Club Millie in charge of or all of our 8 soccer projects that about delivering to all of our students and as was talking with the some potential clients that could possibly former product in the future. And other than that, I’m also kayaking are all the software development, especially the phone because I find it really really interests me on those visualisations and all the animation Park. Silent love love to learn as much as possible on the Skoda inside as well as see how other people actually I learn see how other people actually communicate with each other and try to adapt or chatted learn as much as possible from them. So they’ll be my answer. Thanks for listening.</p>
-<p>Tell me about a time when you had to develop a new skill. How did you approach the learning process?<br>So I will give you experience of my internship at the group. So at work their ass at digital engineer intern and the project is mainly about the building services. So where you saw a softer than ever used before call called Orthodox ribbit and my lowest to developer extension on the river software. So I have zero experience with that software. I have some experience with hole to develop that software. So my initial approach is to definitely see if there’s any people that can help me in the team or in the company because that’s a lot company and there’s a lot of really talented people and luckily I found the person who sells senior bim engineer that is working on those kinds of extensions. So I keep asking him about how to act Start extension. How’s work? I’m glad and later on. I cannot pick up things on my own and I can actually provider a Prado complete code to develop the river at on which I found really interesting because solo algorithm inside Embassy shop tonight, which I never used before in the station and I’ll be my prosci. So first of all, the people who know that and try to improve myself under as much as possible them. I’m wondering what happened there for the snowman that can help the this always Google that I can help me on the candle burner process.</p>
-<p>Describe a situation when you disagreed with someone at work. What did you do, and what was the result?<br>Ok, so I’ll be Carol from the previous answer. So it’s for my Rivet. I don’t that I was working in on my internship internship. So also time when or trying to achieve some of the functionalities and there’s two ways to do a one is a virus in Hobart that I’ll say around 50 to 60% of the job and other than I could be manually down and there’s another another approach that about that. I’ll get them that it’s hard but it’s 80% of the work so and a time I was disgusting discussing that was like my buddy just to figure out which way that feed us the most and initial experience with a river. Mr. Simple algorithm that I could do in wake that could finish some time in a 60% of work. So that’s really great and investigate much time into the difficult algorithm because all the things are the functionality to achieve so that was the situation and discussion was to try to figure out if that’s actually feasible how much time it will cost to implement the later on after discussion at then just try to implemented. I see how hard it is and the result is really hard. Yes quite hard. So we kind of go into the middle way which is so 4:30 drop them, but still be the simple over them so we decided to keep</p>
-<p>Please share a time when you set a goal for yourself and achieved it. How did you go about that?<br>Well, that’s a lot of time start. I said I go for myself, but I didn’t achieve that or 1 things to write a Blog so I had this blog that started out around 3 weeks ago. I’m still keep right to keep riding on a daily basis and that includes almost everything that happened or that is supporting the happened on the day and I try to have taken a reflection on my blog which I find it really useful to look back into. So one thing I was I was trying to achieve us a call is too deadly set up the block write a hey then I tried to see how hard it is to ride it from scratch. It is very hard. So I didn’t go to another approach which is all like a Blog generator.org.au so-called jamstack jamstack my size. Are you sore edging call axle with generous static bag size for me so I can just read markdown and there were generated image came out so I can drop a little bit up our pages and I just did that and try to some of the things which has finally interesting and and it just to keep updating stuff on the block. So that’s all my goes to the blog and I shifted which I will most likely keep going keep recording myself in the dog if your interest check out this but sad and I’ll be my answer.</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Behavioural interview questions and answers </tag>
+            
+            <tag> Talking techniques </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>What would happen with you and your peers after 10 years?</title>
+      <link href="/2022/07/29/What-would-happen-with-you-and-your-peers-after-10-years/"/>
+      <url>/2022/07/29/What-would-happen-with-you-and-your-peers-after-10-years/</url>
+      
+        <content type="html"><![CDATA[<p>From this video<br><a href="https://www.bilibili.com/video/BV1kB4y1Q7nn?spm_id_from=333.1007.tianma.1-3-3.click&amp;vd_source=60064b28be52500ccc945fd8bd7e934b">https://www.bilibili.com/video/BV1kB4y1Q7nn?spm_id_from=333.1007.tianma.1-3-3.click&amp;vd_source=60064b28be52500ccc945fd8bd7e934b</a></p><p>Yea what would happen after 10 year with you?<br>In 10 years time, we would get married, have a children, earn more money, and etc. But that is just one way of living, your peers who are in acedmics might become a professor in some famous univeristies. Everything can happen in 10 year time.<br>You might be wonder, what are the key factors that made the differences? Welp we can’t find any.<br>Is it hardwork? Maybe, but there are a lot of people who did hardwork, but they you would see their grades was actaully going down for some reason. They have a lot of pressure and they seems to be stucked in a dead cycle. </p><p>But again, you cannot success without any hardwork. As a result, hardworking is the at least thing that we can do. </p><p>Pain is inevitable, suffering is optional</p><p>There are many possible roads of your life, but it does not mean u will be stuck in one road. You can switch to any other roads you want, but there are cost when you switch between the roads. </p><p>逆水行舟，不进则退。<br>You cannot stay there, you must keep going up and up.<br>As a programmer, you need to keep going up and up. Learn more and more. </p><p>A breif summary:<br>1，同一学校毕业的，也能发展差别很大，世界是荒谬混沌的。但持续的努力是个人唯一能把握的事，否则只能被命运掌控住。<br>2，不同的道路都可追求自己努力的上限，不管个人运气好坏，不要相信能平着躺平，世界充满着争夺挤压抢占，充满着洗牌，不进则退。<br>3，生活架构要尽可能搭建在自己身上，而不是依靠外界和他人，持续创造价值，持续成长，才能抵抗未知的风险。<br>4，收入是跳跃式增长的，提供的价值上台阶了，收入才会跳跃式增长。收入和提供的价值是个价格和价值的关系，可能会有德不配位和通货膨胀，最终会有价值回归，专注价值提升。<br>5，请提高抗挫折能力，请习惯日常的挫折，这就是人生常态，这个世界没有答案。</p><hr>The End ~]]></content>
+      
+      
       <categories>
-        <category>Talking skill</category>
+          
+          <category> Life </category>
+          
       </categories>
-      <tags>
-        <tag>Behavioural interview questions and answers</tag>
-        <tag>Talking techniques</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Start the holiday?</title>
-    <url>/2020/07/04/Start-the-holiday/</url>
-    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Third day</title>
-    <url>/2020/06/23/Third-day/</url>
-    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>What would happen with you and your peers after 10 years?</title>
-    <url>/2022/07/29/What-would-happen-with-you-and-your-peers-after-10-years/</url>
-    <content><![CDATA[<p>From this video<br><a href="https://www.bilibili.com/video/BV1kB4y1Q7nn?spm_id_from=333.1007.tianma.1-3-3.click&amp;vd_source=60064b28be52500ccc945fd8bd7e934b">https://www.bilibili.com/video/BV1kB4y1Q7nn?spm_id_from=333.1007.tianma.1-3-3.click&amp;vd_source=60064b28be52500ccc945fd8bd7e934b</a></p>
-<p>Yea what would happen after 10 year with you?<br>In 10 years time, we would get married, have a children, earn more money, and etc. But that is just one way of living, your peers who are in acedmics might become a professor in some famous univeristies. Everything can happen in 10 year time.<br>You might be wonder, what are the key factors that made the differences? Welp we can’t find any.<br>Is it hardwork? Maybe, but there are a lot of people who did hardwork, but they you would see their grades was actaully going down for some reason. They have a lot of pressure and they seems to be stucked in a dead cycle. </p>
-<p>But again, you cannot success without any hardwork. As a result, hardworking is the at least thing that we can do. </p>
-<p>Pain is inevitable, suffering is optional</p>
-<p>There are many possible roads of your life, but it does not mean u will be stuck in one road. You can switch to any other roads you want, but there are cost when you switch between the roads. </p>
-<p>逆水行舟，不进则退。<br>You cannot stay there, you must keep going up and up.<br>As a programmer, you need to keep going up and up. Learn more and more. </p>
-<p>A breif summary:<br>1，同一学校毕业的，也能发展差别很大，世界是荒谬混沌的。但持续的努力是个人唯一能把握的事，否则只能被命运掌控住。<br>2，不同的道路都可追求自己努力的上限，不管个人运气好坏，不要相信能平着躺平，世界充满着争夺挤压抢占，充满着洗牌，不进则退。<br>3，生活架构要尽可能搭建在自己身上，而不是依靠外界和他人，持续创造价值，持续成长，才能抵抗未知的风险。<br>4，收入是跳跃式增长的，提供的价值上台阶了，收入才会跳跃式增长。收入和提供的价值是个价格和价值的关系，可能会有德不配位和通货膨胀，最终会有价值回归，专注价值提升。<br>5，请提高抗挫折能力，请习惯日常的挫折，这就是人生常态，这个世界没有答案。</p>
-<hr>
-The End ~]]></content>
+      
+      
+        <tags>
+            
+            <tag> Random thoughts </tag>
+            
+            <tag> Insights </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ihaka LEcture 2022 I</title>
+      <link href="/2022/07/28/Ihaka-LEcture-2022-I/"/>
+      <url>/2022/07/28/Ihaka-LEcture-2022-I/</url>
+      
+        <content type="html"><![CDATA[<p>Domain Specific languages.<br>Things aboutinsulin</p><p>R packages<br>Algricolae</p><hr><p>The grammar of experimental designs<br>Work by the lectuer</p><p>About Concerte syntax and bstract syntax</p><p>Concerte: external representation of a lauguage<br>Abstract: internal representation of a language</p><p>Proposition:<br>Design of abstract and concrete syntax can aid both intra and inter personal communitcation</p><p>E.g<br>Plant diversity effect on soil microbial function and enzymes are stronger than warming in a grassland experiement</p><p>3 Hyposises</p><p>More into the paper:<br>Plants diversity &amp; plts are divided into three subplots<br>Different heat treatments</p><p>This is in fact a <b>Split-plot-design</b></p><h4 id="Edibble-lectuered-designed-library"><a href="#Edibble-lectuered-designed-library" class="headerlink" title="Edibble - lectuered designed library"></a>Edibble - lectuered designed library</h4><ul><li>Semantics of the syntactic sugar are alighed with basic terms in experiemental design </li><li>Experiemntal; structure are built up step by step</li><li>A numbr of downsides</li></ul><p>Easy and quick visulaisation:<br>degguest degustation<br>A simple function called autoplot<br>Pass in edibble plot.</p><p>ggplot functions</p><p>Overall an interesting lecture : )</p><p>The end</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>How to connect to your Home PC from anywhere</title>
+      <link href="/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/"/>
+      <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
+      
+        <content type="html"><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p><p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p><h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
+      
+      
       <categories>
-        <category>Life</category>
+          
+          <category> Computer Hacks </category>
+          
       </categories>
-      <tags>
-        <tag>Random thoughts</tag>
-        <tag>Insights</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WDCC project thoughts</title>
-    <url>/2022/08/05/WDCC-project-thoughts/</url>
-    <content><![CDATA[<p>Just had a first meeting with the new project executives. </p>
-<p>Good ideas come out from them</p>
-<p>Say goodbye to Mr.Jason Ko : (</p>
-<h2 id="Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it"><a href="#Projects-are-there-for-the-students-who-can-gain-the-MOST-knowledge-from-it" class="headerlink" title="Projects are there for the students who can gain the MOST knowledge from it."></a>Projects are there for the students who can gain the MOST knowledge from it.</h2><h4 id="Need-to-think-about-a-more-structured-way-for-the-project-workflow"><a href="#Need-to-think-about-a-more-structured-way-for-the-project-workflow" class="headerlink" title="Need to think about a more structured way for the project workflow."></a>Need to think about a more structured way for the project workflow.</h4>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> Remote Connection </tag>
+            
+            <tag> ssh </tag>
+            
+            <tag> server </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Interface Oriented Programming</title>
+      <link href="/2022/07/25/Interface-Oriented-Programming/"/>
+      <url>/2022/07/25/Interface-Oriented-Programming/</url>
+      
+        <content type="html"><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>]]></content>
+      
+      
       <categories>
-        <category>WDCC Projects</category>
+          
+          <category> Java Fundamental </category>
+          
       </categories>
-      <tags>
-        <tag>Random thoughts</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WDCCxSESA Hackathon 2022!</title>
-    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
-    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
-<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
-  </entry>
-  <entry>
-    <title>Hummm</title>
-    <url>/2020/07/28/humm/</url>
-    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
-]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Programming </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WDCCxSESA Hackathon 2022!</title>
+      <link href="/2022/07/24/WDCCxSESA-Hackathon-2022/"/>
+      <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
+      
+        <content type="html"><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p><h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DayX</title>
+      <link href="/2022/07/23/Day%200/"/>
+      <url>/2022/07/23/Day%200/</url>
+      
+        <content type="html"><![CDATA[<p>Time to pick it up my old blog : )</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hummm</title>
+      <link href="/2020/07/28/humm/"/>
+      <url>/2020/07/28/humm/</url>
+      
+        <content type="html"><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Long time later</title>
+      <link href="/2020/07/21/Long%20time%20later/"/>
+      <url>/2020/07/21/Long%20time%20later/</url>
+      
+        <content type="html"><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DayX</title>
+      <link href="/2020/07/06/DayX/"/>
+      <url>/2020/07/06/DayX/</url>
+      
+        <content type="html"><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Start the holiday?</title>
+      <link href="/2020/07/04/Start-the-holiday/"/>
+      <url>/2020/07/04/Start-the-holiday/</url>
+      
+        <content type="html"><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Fourth day</title>
+      <link href="/2020/06/24/Fourth/"/>
+      <url>/2020/06/24/Fourth/</url>
+      
+        <content type="html"><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Third day</title>
+      <link href="/2020/06/23/Third-day/"/>
+      <url>/2020/06/23/Third-day/</url>
+      
+        <content type="html"><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Second post</title>
+      <link href="/2020/06/22/Second-post/"/>
+      <url>/2020/06/22/Second-post/</url>
+      
+        <content type="html"><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2020/06/20/First/"/>
+      <url>/2020/06/20/First/</url>
+      
+        <content type="html"><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
