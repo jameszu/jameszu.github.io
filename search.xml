@@ -147,12 +147,6 @@
       </tags>
   </entry>
   <entry>
-    <title>DayX</title>
-    <url>/2022/07/23/Day%200/</url>
-    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Daily readings - Day 2</title>
     <url>/2022/07/31/Daily-readings-Day-2/</url>
     <content><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p>
@@ -174,6 +168,106 @@
 ]]></content>
   </entry>
   <entry>
+    <title>DayX</title>
+    <url>/2022/07/23/Day%200/</url>
+    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Design pattern overview</title>
+    <url>/2022/09/20/Design-pattern-overview/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>This particular article introduce the prior knowledge of design pattern. For more detail explanation, please read later posts on design pattern. It is important to learn those design pattern to become a good software engineer. So, lets get started. </p>
+<p>In the first section, we focus on the 7 principles of software designs. Then, in the second section, we would briefly introduce the three categories of the design pattern. We would gain overall control of the design pattern in a certain level. Finally in the third section, UML diagram are introduced to help us understand the design pattern code. </p>
+<h2 id="1-Seven-principles-of-design-pattern"><a href="#1-Seven-principles-of-design-pattern" class="headerlink" title="1. Seven principles of design pattern"></a>1. Seven principles of design pattern</h2><p>Whether in our learning of the design pattern, or the daily development period, we better follow the same design principles.</p>
+<p>There are 7 design principles in common design principles, they are open and close principle, Richter substitution principle, Dependency inversion (inversion) principle, single responsibility principle, interface isolation principle, Dimitt’s law, and synthetic reuse principle. </p>
+<p>There are only ONE goal of those principles: “Low in coupling and high in cohesion. High reusability, extendability and maintainability”</p>
+<table>
+<thead>
+<tr>
+<th align="center">Design Principle</th>
+<th align="center">Description</th>
+<th align="center">Goal</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Open and close principle</td>
+<td align="center">Open for extension, close for modification</td>
+<td align="center">Lower the risks from maintenance</td>
+</tr>
+<tr>
+<td align="center">Dependency inversion principle</td>
+<td align="center">High level should not depends on low level, it need to have interface oriented programming</td>
+<td align="center">Better for upgrading and extending the code architecture</td>
+</tr>
+<tr>
+<td align="center">Single responsibility principle</td>
+<td align="center">One class&#x2F;method only do one thing, Implementation class need to be single.</td>
+<td align="center">Help us understand and make the code more readable.</td>
+</tr>
+<tr>
+<td align="center">Interface isolation principle</td>
+<td align="center">One interface do one thing, interface need to be simple</td>
+<td align="center">Decouple the functions, low in coupling and high in cohesion.</td>
+</tr>
+<tr>
+<td align="center">Dimitt’s law</td>
+<td align="center">Do not know what it should not need to know. A class need to have the least understanding of its objects. It lowers the coupling.</td>
+<td align="center">Only talk to friends, do not take with strangers, decrease the entropy (Chaotic) of the code.</td>
+</tr>
+<tr>
+<td align="center">Richter substitution principle</td>
+<td align="center">Do not break the inheritance. The overwrite or rewrite of the child class functions&#x2F;methods should not affect the parent class’s functions&#x2F;methods</td>
+<td align="center">Prevent the inheritance flood</td>
+</tr>
+<tr>
+<td align="center">Synthetic reuse principle</td>
+<td align="center">Use grouping or Aggregate relationships to achieve code reuse, and use less inheritance</td>
+<td align="center">Lower the code coupling</td>
+</tr>
+</tbody></table>
+<p>Those principles will be shown during our development phase. In most of the time our development is just copying without knowing why we need to do so. With those design principles we can think about WHY we need to do such in our codes. </p>
+<p>There is another classic use case, we define the variable in an entity using <code>private</code>, and use <code>get</code> &amp; <code>set</code> method to access those variables, but why we do not define those variables as <code>public</code> and access them directly?</p>
+<p>Design principles are everywhere in our development. Think more on the coding habits so that you know why you do so. </p>
+<h2 id="2-Design-pattern-categories"><a href="#2-Design-pattern-categories" class="headerlink" title="2. Design pattern categories"></a>2. Design pattern categories</h2><p>Check this section while reading the design pattern notes later. It really helps : )</p>
+<h3 id="I-Creational"><a href="#I-Creational" class="headerlink" title="I. Creational"></a>I. Creational</h3><p>The focus of creational pattern is “how to create an object?” Its main point is to “separate the creational and the use”.</p>
+<ul>
+<li><strong>Singleton pattern</strong>: One class can only create one instance, this class provide a global access point for outside to get this instance, Multiton is its extended version</li>
+<li><strong>Prototype pattern</strong>: Make one object as a prototype, create similar new instances from the prototype. </li>
+<li><strong>Factory Method Pattern</strong>: Define an interface to create the product, and its child class decides on what product are being produced. </li>
+<li><strong>Abstract Factory Pattern</strong>: Provide a interface to create product family, and every child class can create a series of related product</li>
+<li><strong>Builder Pattern</strong>: Divide a complex object into multiple simple parts, create them base on different requirements, and build the complex object. (Similar to divide and conquer)</li>
+</ul>
+<h3 id="II-Structural"><a href="#II-Structural" class="headerlink" title="II. Structural"></a>II. Structural</h3><p>Structural pattern describe how to make a larger structure base on certain layout. It has like-structural method and object structural pattern. The former use inheritance to operate interface and class, and the latter use grouping or coupling to group the objects. </p>
+<ol>
+<li><strong>Proxy pattern</strong>: Provide a proxy for access control of an object. That is, access the object implicitly through proxy to limit, increase or change the features of the object</li>
+<li><strong>Adapter Pattern</strong>: Replace one interface with another interface that the client wants, so that those incompatible class of the original interface can work together now. </li>
+<li><strong>Bridge pattern</strong>: Isolate the abstraction and implementation, so that they can change on their own. That is through the combination relationship in replacing of the inheritance relationship. It lower the coupling of the abstract and implementation. </li>
+<li><strong>Decorator pattern</strong>: Add some responsibility of an object dynamically, so that it can have extra features&#x2F;functionality. </li>
+<li><strong>Facade pattern</strong>: Provide a consistent interface for a complex sub-system, so that those sub-systems are easy to access</li>
+<li><strong>Flyweight pattern</strong>: Use shared technology to support the reusability of large amount of Fine-grained objects</li>
+<li><strong>Composite pattern</strong>: Combine the objects into tree like structure, so that the user can have consistent access of single object and grouped object.</li>
+</ol>
+<h3 id="III-Behavioral"><a href="#III-Behavioral" class="headerlink" title="III. Behavioral"></a>III. Behavioral</h3>]]></content>
+      <categories>
+        <category>Design Pattern</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2020/06/20/First/</url>
+    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Fourth day</title>
+    <url>/2020/06/24/Fourth/</url>
+    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
+]]></content>
+  </entry>
+  <entry>
     <title>How to connect to your Home PC from anywhere</title>
     <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
     <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
@@ -188,18 +282,6 @@
         <tag>ssh</tag>
         <tag>server</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Fourth day</title>
-    <url>/2020/06/24/Fourth/</url>
-    <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2020/06/20/First/</url>
-    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
   </entry>
   <entry>
     <title>Ihaka LEcture 2022 I</title>
@@ -228,19 +310,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Learn Vim? Day 0</title>
-    <url>/2022/08/22/Learn-Vim-Day-0/</url>
-    <content><![CDATA[<h1 id="Vim-basics"><a href="#Vim-basics" class="headerlink" title="Vim basics"></a>Vim basics</h1><p>i for insert<br>hjkl for directions<br>a for go to the first position<br>shift a for go to the end of the line<br>g for go to the start of the file<br>shift g for go to the eof</p>
-<p>and there is more…</p>
-]]></content>
-      <categories>
-        <category>vim</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Interface Oriented Programming</title>
     <url>/2022/07/25/Interface-Oriented-Programming/</url>
     <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
@@ -251,6 +320,19 @@
       <tags>
         <tag>Programming</tag>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Learn Vim? Day 0</title>
+    <url>/2022/08/22/Learn-Vim-Day-0/</url>
+    <content><![CDATA[<h1 id="Vim-basics"><a href="#Vim-basics" class="headerlink" title="Vim basics"></a>Vim basics</h1><p>i for insert<br>hjkl for directions<br>a for go to the first position<br>shift a for go to the end of the line<br>g for go to the start of the file<br>shift g for go to the eof</p>
+<p>and there is more…</p>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -320,9 +402,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Third day</title>
-    <url>/2020/06/23/Third-day/</url>
-    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
+    <title>Start the holiday?</title>
+    <url>/2020/07/04/Start-the-holiday/</url>
+    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
 ]]></content>
   </entry>
   <entry>
@@ -340,9 +422,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Start the holiday?</title>
-    <url>/2020/07/04/Start-the-holiday/</url>
-    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
+    <title>Third day</title>
+    <url>/2020/06/23/Third-day/</url>
+    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
 ]]></content>
   </entry>
   <entry>
