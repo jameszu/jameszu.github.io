@@ -163,14 +163,14 @@
   </entry>
   <entry>
     <title>DayX</title>
-    <url>/2020/07/06/DayX/</url>
-    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
+    <url>/2022/07/23/Day%200/</url>
+    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
 ]]></content>
   </entry>
   <entry>
     <title>DayX</title>
-    <url>/2022/07/23/Day%200/</url>
-    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
+    <url>/2020/07/06/DayX/</url>
+    <content><![CDATA[<p>Updated the theme. It is a very interesting theme and I wonder how he&#x2F;she did this, a .ejs file like whaatt??<br>I’ll definelty write a theme for my own.</p>
 ]]></content>
   </entry>
   <entry>
@@ -247,7 +247,9 @@
 <li><strong>Flyweight pattern</strong>: Use shared technology to support the reusability of large amount of Fine-grained objects</li>
 <li><strong>Composite pattern</strong>: Combine the objects into tree like structure, so that the user can have consistent access of single object and grouped object.</li>
 </ol>
-<h3 id="III-Behavioral"><a href="#III-Behavioral" class="headerlink" title="III. Behavioral"></a>III. Behavioral</h3>]]></content>
+<h3 id="III-Behavioral"><a href="#III-Behavioral" class="headerlink" title="III. Behavioral"></a>III. Behavioral</h3><p>Behavioral pattern is used to describe the complex control flow when running a program. i.e. describe how multiple class or objects work together as a whole to accomplish a task that a single object cannot do. It involves the distribution of algorithm and object. </p>
+<p>Behavioral pattern has class behavioral pattern and object behavioral pattern. </p>
+]]></content>
       <categories>
         <category>Design Pattern</category>
       </categories>
@@ -408,6 +410,12 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Third day</title>
+    <url>/2020/06/23/Third-day/</url>
+    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
+]]></content>
+  </entry>
+  <entry>
     <title>WDCC project thoughts</title>
     <url>/2022/08/05/WDCC-project-thoughts/</url>
     <content><![CDATA[<p>Just had a first meeting with the new project executives. </p>
@@ -420,12 +428,6 @@
       <tags>
         <tag>Random thoughts</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Third day</title>
-    <url>/2020/06/23/Third-day/</url>
-    <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
-]]></content>
   </entry>
   <entry>
     <title>WDCCxSESA Hackathon 2022!</title>
