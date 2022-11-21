@@ -174,6 +174,12 @@
 ]]></content>
   </entry>
   <entry>
+    <title></title>
+    <url>/2020/06/20/First/</url>
+    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
+]]></content>
+  </entry>
+  <entry>
     <title>Design pattern overview</title>
     <url>/2022/09/20/Design-pattern-overview/</url>
     <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>This particular article introduce the prior knowledge of design pattern. For more detail explanation, please read later posts on design pattern. It is important to learn those design pattern to become a good software engineer. So, lets get started. </p>
@@ -248,7 +254,15 @@
 <li><strong>Composite pattern</strong>: Combine the objects into tree like structure, so that the user can have consistent access of single object and grouped object.</li>
 </ol>
 <h3 id="III-Behavioral"><a href="#III-Behavioral" class="headerlink" title="III. Behavioral"></a>III. Behavioral</h3><p>Behavioral pattern is used to describe the complex control flow when running a program. i.e. describe how multiple class or objects work together as a whole to accomplish a task that a single object cannot do. It involves the distribution of algorithm and object. </p>
-<p>Behavioral pattern has class behavioral pattern and object behavioral pattern. </p>
+<p>Behavioral pattern has class behavioral pattern and object behavioral pattern. The former used inheritance to distribute behavior between classes, and the later uses combination or cohesion to distribute behavior within objects. Because the combination or cohesion relationship has lower coupling in inheritance, it satisfy composite reuse principle. Hence the object behavioral pattern is more flexible than class behavior pattern.</p>
+<ol>
+<li><strong>Template Method Pattern</strong>: It defines the algorithm skeleton of an operation. It delay some algorithm steps into the subclasses, so that the subclasses can redefine some certain steps of the algorithm without changing the algorithm structure. </li>
+<li><strong>Strategy Pattern</strong>: It defines a series of algorithm, and encapsulate each algorithm so that they are interchangeable. The change of the algorithm does not affect the client that using the algorithm.</li>
+<li><strong>Command Pattern</strong>: Encapsulate a request as an object so that it separates</li>
+</ol>
+<p>Note:</p>
+<p>This is an English translation of <a href="https://www.cnblogs.com/tianClassmate/p/16480517.html">This blog article</a></p>
+<p>Hope you enjoyed : )</p>
 ]]></content>
       <categories>
         <category>Design Pattern</category>
@@ -258,32 +272,10 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2020/06/20/First/</url>
-    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
-  </entry>
-  <entry>
     <title>Fourth day</title>
     <url>/2020/06/24/Fourth/</url>
     <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>How to connect to your Home PC from anywhere</title>
-    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
-    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
-<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
-<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
-      <categories>
-        <category>Computer Hacks</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>Remote Connection</tag>
-        <tag>ssh</tag>
-        <tag>server</tag>
-      </tags>
   </entry>
   <entry>
     <title>Ihaka LEcture 2022 I</title>
@@ -312,6 +304,22 @@
 ]]></content>
   </entry>
   <entry>
+    <title>How to connect to your Home PC from anywhere</title>
+    <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
+    <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
+<p>This article will show one way of connecting your Home PC (Windows) From anywhere of the internet : )<br>Enjoy</p>
+<h4 id="Step-1-Set-up-your-Home-PC"><a href="#Step-1-Set-up-your-Home-PC" class="headerlink" title="Step 1 Set up your Home PC"></a>Step 1 Set up your Home PC</h4>]]></content>
+      <categories>
+        <category>Computer Hacks</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Remote Connection</tag>
+        <tag>ssh</tag>
+        <tag>server</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Interface Oriented Programming</title>
     <url>/2022/07/25/Interface-Oriented-Programming/</url>
     <content><![CDATA[<p>Welp what is IOP? Like what even is Interface? <br><br>Just think of a socket plug. All the manfuncer company would use the same interface standard to manufact those plugs. The stuff that are inside does not matter. Even if one plug is not working, we can just get another one that has the same standard. </p>
@@ -325,6 +333,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Last Exam..Ever?</title>
+    <url>/2022/10/27/Last-Exam-Ever/</url>
+    <content><![CDATA[<p>Oct 27th, 2022. Remember this date. Maybe this is my last exam ever…. </p>
+<p>COMPSCI 753: Algorithm for Massive data </p>
+<p>HARD AS exam. 2.5 hours exam and I wrote 10 pages of answers….</p>
+<hr>
+<p>UPDATE:</p>
+<p>Result is out!!!!<br>See the picture below<br><img src="https://user-images.githubusercontent.com/41566813/203025128-b7b2e41a-777f-4aec-bd2b-64e190a320cf.png" alt="exam score distribution"></p>
+<p>As you can see I got 87, not a bad grade though hehe. I am satisfied about this. </p>
+<p>And the best thing is, I got A+ for this course!</p>
+<p>Let’s see what will happen in the near future ; ) </p>
+]]></content>
+      <categories>
+        <category>Random</category>
+      </categories>
+      <tags>
+        <tag>Random</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Long time later</title>
+    <url>/2020/07/21/Long%20time%20later/</url>
+    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Learn Vim? Day 0</title>
     <url>/2022/08/22/Learn-Vim-Day-0/</url>
     <content><![CDATA[<h1 id="Vim-basics"><a href="#Vim-basics" class="headerlink" title="Vim basics"></a>Vim basics</h1><p>i for insert<br>hjkl for directions<br>a for go to the first position<br>shift a for go to the end of the line<br>g for go to the start of the file<br>shift g for go to the eof</p>
@@ -336,12 +370,6 @@
       <tags>
         <tag>vim</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Long time later</title>
-    <url>/2020/07/21/Long%20time%20later/</url>
-    <content><![CDATA[<p>Ah it’s been long time I touched these files. Might need to put this blog on hold as there is <a href="https://msa-2020-devops-james.azurewebsites.net/">another webapp</a> still under development. I might not update this blog for a whilee….</p>
-]]></content>
   </entry>
   <entry>
     <title>Long time no see</title>
@@ -416,6 +444,12 @@
 ]]></content>
   </entry>
   <entry>
+    <title>WDCCxSESA Hackathon 2022!</title>
+    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
+    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
+<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
+  </entry>
+  <entry>
     <title>WDCC project thoughts</title>
     <url>/2022/08/05/WDCC-project-thoughts/</url>
     <content><![CDATA[<p>Just had a first meeting with the new project executives. </p>
@@ -430,10 +464,10 @@
       </tags>
   </entry>
   <entry>
-    <title>WDCCxSESA Hackathon 2022!</title>
-    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
-    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
-<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
+    <title>Hummm</title>
+    <url>/2020/07/28/humm/</url>
+    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
+]]></content>
   </entry>
   <entry>
     <title>What would happen with you and your peers after 10 years?</title>
@@ -454,11 +488,5 @@ The End ~]]></content>
         <tag>Random thoughts</tag>
         <tag>Insights</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hummm</title>
-    <url>/2020/07/28/humm/</url>
-    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
-]]></content>
   </entry>
 </search>
