@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Clean Architecture - 0</title>
-    <url>/2022/08/16/Clean-Architecture-0/</url>
-    <content><![CDATA[<p>Notes taken from <a href="https://www.bilibili.com/video/BV1TQ4y1T7Sh?p=8&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=60064b28be52500ccc945fd8bd7e934b">this</a> video </p>
-<h1 id="Good-architecture-is-important"><a href="#Good-architecture-is-important" class="headerlink" title="Good architecture is important"></a>Good architecture is important</h1><p>Start from a story:</p>
-<p>2 architects John and Jane both working on a building but in two different style.</p>
-<p>John is an expert in classic architecture building, He keeps pushing the boundary of architectural design using cutting edge technologies. He uses all of his favorite tools. His design is elegant yet state of the art. </p>
-<p>Once he finished the design, he just hand that to the crew and move on for his next masterpiece. Once the building is finished he goes to the opening ceremony and read the reward of his accomplishment. </p>
-<p>But Jane has a very different approach to the architecture. First, she start chatting with the future inhabitants in the building. I.e. the employees, the maintenance group and even the construction worker. She finds out what they need, what they found valuable, and what the experience level of the construction is. </p>
-<p>Then she designs the architecture with he inhabitants in mind. She consider their need with each decision that they were made. </p>
-<p>Once she finished the blueprint, she doesn’t just hand it to the worker. Instead she work side by side with them, help them understand the design, and improve the design, and solve the problems that are arrived. </p>
-<p>Those two approaches is going to create two different architecture.<br>So, which one would the work like? </p>
-<p>That story drives us to the CLEAN architecture. </p>
-]]></content>
-      <categories>
-        <category>architecture</category>
-      </categories>
-      <tags>
-        <tag>CLEAN architecture</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>COMPSCI 753 - Lecture Notes - Stream-Sampling</title>
     <url>/2022/08/17/COMPSCI-753-Lecture-Notes-Stream-Sampling/</url>
     <content><![CDATA[<h1 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h1><p>Since we cannot store alllll the stream, we store a <b>uniform sample</b> of the stream to answer queries</p>
@@ -96,6 +75,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Clean Architecture - 0</title>
+    <url>/2022/08/16/Clean-Architecture-0/</url>
+    <content><![CDATA[<p>Notes taken from <a href="https://www.bilibili.com/video/BV1TQ4y1T7Sh?p=8&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=60064b28be52500ccc945fd8bd7e934b">this</a> video </p>
+<h1 id="Good-architecture-is-important"><a href="#Good-architecture-is-important" class="headerlink" title="Good architecture is important"></a>Good architecture is important</h1><p>Start from a story:</p>
+<p>2 architects John and Jane both working on a building but in two different style.</p>
+<p>John is an expert in classic architecture building, He keeps pushing the boundary of architectural design using cutting edge technologies. He uses all of his favorite tools. His design is elegant yet state of the art. </p>
+<p>Once he finished the design, he just hand that to the crew and move on for his next masterpiece. Once the building is finished he goes to the opening ceremony and read the reward of his accomplishment. </p>
+<p>But Jane has a very different approach to the architecture. First, she start chatting with the future inhabitants in the building. I.e. the employees, the maintenance group and even the construction worker. She finds out what they need, what they found valuable, and what the experience level of the construction is. </p>
+<p>Then she designs the architecture with he inhabitants in mind. She consider their need with each decision that they were made. </p>
+<p>Once she finished the blueprint, she doesn’t just hand it to the worker. Instead she work side by side with them, help them understand the design, and improve the design, and solve the problems that are arrived. </p>
+<p>Those two approaches is going to create two different architecture.<br>So, which one would the work like? </p>
+<p>That story drives us to the CLEAN architecture. </p>
+]]></content>
+      <categories>
+        <category>architecture</category>
+      </categories>
+      <tags>
+        <tag>CLEAN architecture</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Clean Architecture - 1 Domain centric architecture</title>
+    <url>/2022/08/16/Clean-Architecture-1-Domain-centric-architecture/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Daily Reading - Day 4 Toastmasters Again!</title>
     <url>/2022/08/08/Daily-Reading-Day-4-Toastmasters-Again/</url>
     <content><![CDATA[<p>Ok toastmasters</p>
@@ -110,11 +115,6 @@
       <tags>
         <tag>Toastmasters</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Clean Architecture - 1 Domain centric architecture</title>
-    <url>/2022/08/16/Clean-Architecture-1-Domain-centric-architecture/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Daily Readings - Day 3 (Toastmaster!)</title>
@@ -147,12 +147,6 @@
       </tags>
   </entry>
   <entry>
-    <title>DayX</title>
-    <url>/2022/07/23/Day%200/</url>
-    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Daily readings - Day 2</title>
     <url>/2022/07/31/Daily-readings-Day-2/</url>
     <content><![CDATA[<p><a href="https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript">https://www.ted.com/talks/david_pogue_10_top_time_saving_tech_tips/transcript</a></p>
@@ -166,6 +160,12 @@
       <tags>
         <tag>Ted Talks</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>DayX</title>
+    <url>/2022/07/23/Day%200/</url>
+    <content><![CDATA[<p>Time to pick it up my old blog : )</p>
+]]></content>
   </entry>
   <entry>
     <title>DayX</title>
@@ -266,12 +266,6 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2020/06/20/First/</url>
-    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
-]]></content>
-  </entry>
-  <entry>
     <title>First Car accident</title>
     <url>/2023/10/01/First-Car-accident/</url>
     <content><![CDATA[<h1 id="Ah-car-crash"><a href="#Ah-car-crash" class="headerlink" title="Ah car crash"></a>Ah car crash</h1><p>In Sept 26th, I had my first ever car accident. It was a rainy afternoon at 5:19pm. My gf and I were driving to Newmarket to try out the new restaurant called Katsu Katsu. </p>
@@ -298,6 +292,12 @@
       </tags>
   </entry>
   <entry>
+    <title></title>
+    <url>/2020/06/20/First/</url>
+    <content><![CDATA[<p>Well today is 20th of June, 2020. There are a lot of things to say. TLDR This contains randoms thoughts and other stuff like leetcode. </p>
+]]></content>
+  </entry>
+  <entry>
     <title>How to connect to your Home PC from anywhere</title>
     <url>/2022/07/27/How-to-connect-to-your-Home-PC-from-anywhere/</url>
     <content><![CDATA[<p>Ok Hi there.<br>Imagine if you have a super powerful PC at home, but u are going to the university for lectures. Obevisly you cannot carry your PC, so what do you do now? You go for remote connections!</p>
@@ -317,6 +317,32 @@
     <title>Fourth day</title>
     <url>/2020/06/24/Fourth/</url>
     <content><![CDATA[<p>Finished the first exam and three more to go… One is tmr btw</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Ihaka LEcture 2022 I</title>
+    <url>/2022/07/28/Ihaka-LEcture-2022-I/</url>
+    <content><![CDATA[<p>Domain Specific languages.<br>Things aboutinsulin</p>
+<p>R packages<br>Algricolae</p>
+<hr>
+
+<p>The grammar of experimental designs<br>Work by the lectuer</p>
+<p>About Concerte syntax and bstract syntax</p>
+<p>Concerte: external representation of a lauguage<br>Abstract: internal representation of a language</p>
+<p>Proposition:<br>Design of abstract and concrete syntax can aid both intra and inter personal communitcation</p>
+<p>E.g<br>Plant diversity effect on soil microbial function and enzymes are stronger than warming in a grassland experiement</p>
+<p>3 Hyposises</p>
+<p>More into the paper:<br>Plants diversity &amp; plts are divided into three subplots<br>Different heat treatments</p>
+<p>This is in fact a <b>Split-plot-design</b></p>
+<h4 id="Edibble-lectuered-designed-library"><a href="#Edibble-lectuered-designed-library" class="headerlink" title="Edibble - lectuered designed library"></a>Edibble - lectuered designed library</h4><ul>
+<li>Semantics of the syntactic sugar are alighed with basic terms in experiemental design </li>
+<li>Experiemntal; structure are built up step by step</li>
+<li>A numbr of downsides</li>
+</ul>
+<p>Easy and quick visulaisation:<br>degguest degustation<br>A simple function called autoplot<br>Pass in edibble plot.</p>
+<p>ggplot functions</p>
+<p>Overall an interesting lecture : )</p>
+<p>The end</p>
 ]]></content>
   </entry>
   <entry>
@@ -351,32 +377,6 @@
       <tags>
         <tag>Random</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Ihaka LEcture 2022 I</title>
-    <url>/2022/07/28/Ihaka-LEcture-2022-I/</url>
-    <content><![CDATA[<p>Domain Specific languages.<br>Things aboutinsulin</p>
-<p>R packages<br>Algricolae</p>
-<hr>
-
-<p>The grammar of experimental designs<br>Work by the lectuer</p>
-<p>About Concerte syntax and bstract syntax</p>
-<p>Concerte: external representation of a lauguage<br>Abstract: internal representation of a language</p>
-<p>Proposition:<br>Design of abstract and concrete syntax can aid both intra and inter personal communitcation</p>
-<p>E.g<br>Plant diversity effect on soil microbial function and enzymes are stronger than warming in a grassland experiement</p>
-<p>3 Hyposises</p>
-<p>More into the paper:<br>Plants diversity &amp; plts are divided into three subplots<br>Different heat treatments</p>
-<p>This is in fact a <b>Split-plot-design</b></p>
-<h4 id="Edibble-lectuered-designed-library"><a href="#Edibble-lectuered-designed-library" class="headerlink" title="Edibble - lectuered designed library"></a>Edibble - lectuered designed library</h4><ul>
-<li>Semantics of the syntactic sugar are alighed with basic terms in experiemental design </li>
-<li>Experiemntal; structure are built up step by step</li>
-<li>A numbr of downsides</li>
-</ul>
-<p>Easy and quick visulaisation:<br>degguest degustation<br>A simple function called autoplot<br>Pass in edibble plot.</p>
-<p>ggplot functions</p>
-<p>Overall an interesting lecture : )</p>
-<p>The end</p>
-]]></content>
   </entry>
   <entry>
     <title>Learn Vim? Day 0</title>
@@ -427,12 +427,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Second post</title>
-    <url>/2020/06/22/Second-post/</url>
-    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Practice my talking skill - Day 1</title>
     <url>/2022/07/30/Practice-my-talking-skill-Day-1/</url>
     <content><![CDATA[<ol>
@@ -458,10 +452,28 @@
       </tags>
   </entry>
   <entry>
+    <title>Second post</title>
+    <url>/2020/06/22/Second-post/</url>
+    <content><![CDATA[<p>Well this is the second day and nothing has been done actually. And I have a test tmr at 1pm rip<br>Might working on the theme and stuff soon</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Start the holiday?</title>
+    <url>/2020/07/04/Start-the-holiday/</url>
+    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Third day</title>
     <url>/2020/06/23/Third-day/</url>
     <content><![CDATA[<p>Well the exam started at 1pm NZST and it has been 7 hours. Two more questions to go lol. </p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>WDCCxSESA Hackathon 2022!</title>
+    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
+    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
+<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
   </entry>
   <entry>
     <title>WDCC project thoughts</title>
@@ -478,16 +490,10 @@
       </tags>
   </entry>
   <entry>
-    <title>Start the holiday?</title>
-    <url>/2020/07/04/Start-the-holiday/</url>
-    <content><![CDATA[<p>Today is my offical start of the holiday.<br>Then I realize there are more things to do… CV, internships, leetcode, kickstart, MSA. All kinds of things are mixed together and it is hard to decide the order.<br>Anyways, hope the best : )</p>
+    <title>Hummm</title>
+    <url>/2020/07/28/humm/</url>
+    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>WDCCxSESA Hackathon 2022!</title>
-    <url>/2022/07/24/WDCCxSESA-Hackathon-2022/</url>
-    <content><![CDATA[<p>Finally after 48 hours we get to see 16 teams presenting their amazing ideas. <br><br>As an executive who helped out in the hackathon, it is great to talk with thought young and bright mind students and get to see thier ideas being levearge to another level. <br></p>
-<h2 id="Would-chuck-a-photo-here"><a href="#Would-chuck-a-photo-here" class="headerlink" title="Would chuck a photo here : )"></a>Would chuck a photo here : )</h2>]]></content>
   </entry>
   <entry>
     <title>What would happen with you and your peers after 10 years?</title>
@@ -508,11 +514,5 @@ The End ~]]></content>
         <tag>Random thoughts</tag>
         <tag>Insights</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hummm</title>
-    <url>/2020/07/28/humm/</url>
-    <content><![CDATA[<p>Finished the project now sem 2 has started. More work to do and time mangement become important!!!!!</p>
-]]></content>
   </entry>
 </search>
